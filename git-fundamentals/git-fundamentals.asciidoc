@@ -1,0 +1,51 @@
+:setids:
+:sectanchors:
+:sectlinks:
+:sectnums:
+:toc:
+:stem:
+
+:numbered!:
+
+== Overview
+
+The goal of this workshop is to arm everyone here with the tools to be able to wield `git`, practically and pragmatically.
+
+=== Schedule
+
+Here's the rough outline for how today will flow...
+
+[cols=2*,options="header"]
+|=== 
+| Start
+| Description
+
+| 10:00 | <<welcome>>
+| 10:00 | Introductions (10 minutes)
+| 10:10 | <<gitupandrunning>>
+| 11:00	| Break (5 minutes)
+| 11:05	| <<cuttingteeth>>
+| 12:00	| Lunch (60 minutes)
+| 13:00	| <<branching>>
+| 13:45	| Break (5 minutes)
+| 13:50	| <<advanced>>
+| 14:30	| Break (5 minutes)
+| 14:35	| Free Exploration/Q&A (15 minutes)
+| 14:50	| Retro/Close/Other Resources
+|===
+
+:leveloffset: +1
+
+include::welcome.asciidoc[]
+
+:numbered:
+
+include::gitupandrunning.asciidoc[]
+
+include::cuttingteeth.asciidoc[]
+
+include::branching.asciidoc[]
+
+include::advanced.asciidoc[]
+
+:leveloffset: -1
