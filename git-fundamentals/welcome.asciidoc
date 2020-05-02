@@ -62,7 +62,8 @@ This workshop/presentation is licensed under the https://opensource.org/licenses
 [%interactive]
 * [ ] Activity: There's a branch for that!
 * [ ] Activity: Lane's ending...time to merge!
-* [ ] Activity: What are the cool kids doing (Branch management strategies)!
+* [ ] Activity: Tag it and Bag it! 🏷️
+* [ ] Activity: What are the cool kids doing (Branch management strategies)! 😎
 [%interactive]
 ** [ ] Trunk based development
 ** [ ] Git Flow
@@ -71,7 +72,7 @@ This workshop/presentation is licensed under the https://opensource.org/licenses
 *2:00 - 3:00pm: Oh you fancy!? (Advanced Git Workflows)*
 [%interactive]
 * [ ] Activity: Prettying up the git log!
-* [ ] Activity: Pickly picky picky...
+* [ ] Activity: Picky picky picky...
 * [ ] Activity: Time Heist (rebase all the things)!
 * [ ] Actvity: Open Exploration
 * [ ] Q & A

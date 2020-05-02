@@ -1,0 +1,31 @@
+Arguments: 
+  /home/will/.nvm/versions/node/v14.0.0/bin/node /usr/share/yarn/bin/yarn.js add --dev mocha
+
+PATH: 
+  /home/will/.pyenv/shims:/home/will/.pyenv/bin:/home/will/google-cloud-sdk/bin:/home/will/.pyenv/shims:/home/will/.pyenv/bin:/home/will/.nvm/versions/node/v14.0.0/bin:/home/will/.cargo/bin:/home/will/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/will/.dotnet/tools:/home/will/thinkorswim:/usr/local/go/bin:/home/will/workspace/bin:/home/will/idea-IU-171.3780.107/bin:/home/will/cf-cli:/home/will/ngrok:/home/will/protoc/3.6.1/bin:/home/will/caddy/latest:/home/will/exercism-cli:/home/will/jetbrains-toolbox-1.2.2314:/home/will/exodus-linux-x64-20.4.18:/home/will/Sia-UI-v1.3.3-linux-x64:/home/will/Firefox/57.0.4/firefox:/home/will/Postman-linux-x64-7.21.1:/home/will/bin:/home/will/.cargo/bin:/home/will/op_linux_amd64_v0.9.3/:/home/will/terraform_0.12.23_linux_amd64:/home/will/thinkorswim:/usr/local/go/bin:/home/will/workspace/bin:/home/will/idea-IU-171.3780.107/bin:/home/will/cf-cli:/home/will/ngrok:/home/will/protoc/3.6.1/bin:/home/will/caddy/latest:/home/will/exercism-cli:/home/will/jetbrains-toolbox-1.2.2314:/home/will/exodus-linux-x64-20.4.18:/home/will/Sia-UI-v1.3.3-linux-x64:/home/will/Firefox/57.0.4/firefox:/home/will/Postman-linux-x64-7.21.1:/home/will/bin:/home/will/.cargo/bin:/home/will/op_linux_amd64_v0.9.3/:/home/will/terraform_0.12.23_linux_amd64
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  14.0.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/will/git/github/courses/git-fundamentals/exercises/javascript/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1631:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:304:30)
+      at /usr/share/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

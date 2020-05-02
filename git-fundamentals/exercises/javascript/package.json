@@ -1,0 +1,10 @@
+{
+    "name": "speaker",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "mocha"
+    },
+    "devDependencies": {
+        "mocha": "^7.1.2"
+    }
+}
