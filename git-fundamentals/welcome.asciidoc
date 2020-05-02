@@ -4,7 +4,7 @@
 
 🗣️ What's up!? 
 
-Our mission, if you choose to accept, it is to arm you with the tools you need to be able to wield the power of the might Hammer Mjölnir, errrr, I mean https://git-scm.com/[Git].
+Our mission, if you choose to accept it, is to arm you with the tools you need to be able to wield the power of the might Hammer Mjölnir, errrr, I mean https://git-scm.com/[Git].
 
 WARNING: This workshop is not one offered by Microsoft nor do the opinions expressed herein reflect the opinions of Microsoft. We good?!? 👀
 
