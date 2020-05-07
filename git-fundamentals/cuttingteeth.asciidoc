@@ -27,8 +27,8 @@ In this exercise we're going to clone two repositories/projects down to your mac
 
 = Activity: What's the 411? 
 
-One of the commands you'll find yourself running quite often to understand what the state of things are is `git status`. `git status`
-interrogates your local copy of the repository and informs you of what state you're currently in (i.e. what have you modified, if anything, etc.)
+One of the commands you'll find yourself running quite often to understand the state of things is `git status`. `git status`
+interrogates your local copy of the repository and informs you of what state you're currently in (i.e. what have you modified (if anything), etc.)
 
 1. Try it! Execute `git status` and take a look at the output.
 
@@ -45,9 +45,9 @@ nothing to commit, working tree clean <3>
 <2> As we noted previously, git is a Distributed SCM `origin` is the internal name of the remote repository location from which we initially cloned.
 <3> "working tree" generally refers to this local working copy in this directory. It's clean when we haven't made any changes (yet).
 
-In addition to understanding the current state of things, it's often also very handy to understand what has teken place so far.
+In addition to understanding the current state of things, it's often also very handy to understand what has taken place so far.
 
-In order to do that we rely on a command called `git log`. `git log` shows us the full history (if we care to scroll) of the changes 
+To do that, we rely on a command called `git log`. `git log` shows us the full history (if we care to scroll) of the changes 
 made to the repository.
 
 Let's Try It!
@@ -73,7 +73,7 @@ Date:   Thu May 7 03:41:49 2020 +0000
 commit 64c7eeb8122e0160d338487f9473b5fc40b06067
 :
 ----
-<1> Every change made in a git repository happens by `commit`ing the change to the repository's history. Each commit get assigned a long identifier called a `commit hash` (thankfully when we need this we typically only need the first handful of characters).
+<1> Every change made in a git repository happens by ``commit``ing the change to the repository's history. Each commit get assigned a long identifier called a `commit hash` (thankfully when we need this we typically only need the first handful of characters).
 <2> Who made this change?
 <3> When was this change made?
 <4> What did the person say when they made this change? (This is also called the commit "message")
