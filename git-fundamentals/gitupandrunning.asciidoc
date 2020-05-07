@@ -1,2 +1,148 @@
 [#gitupandrunning]
 = Git...Up & Running
+ 
+> "History, History, History..." - Archie Harmon
+
+== Programming vs. Software Engineering
+
+> "Software engineering is what happens to programming when you add time and other programmers." - Russ Cox
+
+=== No "I" in Team
+
+Many of us are familiar with the joy and fulfillment of cranking out code, on our own, for class assignments.
+It's truly exhilarating! You feel like you have the the world at your fingertips and can wrangle the problem
+into submission with merely a QWERTY (or DVORAK if you're into that sort of thing) keyboard at your disposal.
+
+This gets completely turned on it's head once you are among the professional developer ranks. When working in
+teams one thing that becomes blatantly obvious is that multiple developers/engineers trying to collaborate need
+an efficient way to both simultaneously have a source of truth as it pertains to the current state of the code
+base.
+
+This could be accomplished many ways. Back in the day, I can distinctly remember zipping all of my code into a
+*.zip file and emailing it to my classmates for a class project (this was pre-Github so don't judge me). But, copying
+code to any medium (send via e-mail, floppy disk, file share/network attached storage, Dropbox, etc.) is error 
+prone and doesn't scale beyond a couple of team members. 
+
+Source control management (SCM) to the rescue!
+
+=== Flavors of Source Control
+
+There are (in my experience) two highly prevalent models in Source Control Managmement: `Client/Server` and `Distributed`.
+
+But, what does that all mean?
+
+==== Client/Server (Centralized) Source Control Management
+
+In the client/server source control management world there is a single solitary source of truth upon which every
+team member relies. Generally, no useful work can happen in a client/server world without a connection to the central 
+repository. The most prevalent centralized SCM solutions in industry are:
+
+- Concurrent Versions System (commonly referred to as CVS)
+- Subversion (commonly referred to as SVN)
+- Perforce
+
+Around about 2009-2010, about a year or so after GitHub was released, Git really started to challenge SVN for the hearts
+and minds of the developer community. Git was a welcome reprieve on two primary fronts: 1) It made branching and merging
+incredibly easy and non painful (a really sore point for SVN users) and 2) You were able to branch, commit, and 
+have full workflows without a persistent connection to a remote repository (yay! Working on airplanes!). Let's 
+talk a bit more about Distributed Source Control Management.
+
+==== Distributed (De-centralized) Source Control Management
+
+In the distributed source control management world, every team member has their own copy of the full history
+of the source tree/code. In contras to client/server SCM there is no single solitary source of truth upon 
+which every team member relies (Disclaimer: generally there is a defacto source of truth that most people 
+use in practice but this isn't a hard and fast rule as we'll soon see). Generally, no useful work can happen 
+in a client/server world without a connection to the central repository. 
+
+The most prevalent distributed SCM solutions in industry are:
+
+- Mercurial
+- Git
+
+As we previously alluded to, GitHub really helped with Git's meteoric rise. Let's take a quick detour to talk 
+about the history of git.
+
+==== A TL;DR; of Git's History
+
+For the full story please feel free to read a colorful take here in the official https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git[Git Book].
+
+- Git was created by Linus Torvolds (the creator of Linux, well specifically the Linux Kernel which is the heart of the OS)
+- It was created out of necessity as the Linux team lost free usage of their incumbent SCM...so Git was born! 
+
+The principles that guided Git's design were
+
+- Speed
+- Simplicity
+- Ability to handle many parallel work streams
+- Ability to handle large code bases
+- Fully Disbtributed
+
+==== Time for a bit of Bootstrapping!
+
+> "Give me five minutes to chop down a tree, and I'd spend the first two and a half sharpening my axe..." - Anonymous Woodsman
+
+Before we delve into the belly of practical, every day usage of `git` we'll need to ensure we have all of our prerequisites in order.
+
+===== Downloading Git Tools
+
+First thing first, in order to use `git` you'll need to install it! Detailed instructions for your operating system 
+can be found https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[here]. Let us know if you have any problems!
+
+To confirm your installation please execute the following command `git --help --all`.
+
+You should see output similar to the following:
+
+[source,bash]
+----
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+available git commands in '/usr/lib/git-core'
+
+  add                       diff-tree                 merge-one-file            reset
+  add--interactive          difftool                  merge-ours                rev-list
+  am                        difftool--helper          merge-recursive           rev-parse
+  annotate                  fast-export               merge-resolve             revert
+  apply                     fast-import               merge-subtree             rm
+  archive                   fetch                     merge-tree                send-email
+  bisect                    fetch-pack                mergetool                 send-pack
+  bisect--helper            filter-branch             mktag                     sh-i18n--envsubst
+  blame                     fmt-merge-msg             mktree                    shell
+  branch                    for-each-ref              mv                        shortlog
+  bundle                    format-patch              mw                        show
+  cat-file                  fsck                      name-rev                  show-branch
+  check-attr                fsck-objects              notes                     show-index
+  check-ignore              gc                        pack-objects              show-ref
+  check-mailmap             get-tar-commit-id         pack-redundant            stage
+  check-ref-format          grep ...
+----
+
+===== Optional: Download a git desktop client
+
+Personally, I prefer to use `git` from the CLI (command line interface). However, there are a number of developers
+who prefer a different user experience as it pertains to their git workflow. Here are a handful of them:
+
+- https://desktop.github.com/[GitHub Desktop] 
+- https://www.sourcetreeapp.com/[Sourcetree] 
+- https://www.gitkraken.com/download[GitKraken] 
+
+These are the top three, anecdotally based on the developers I know that prefer such tools. 
+There are many more as well listed https://git-scm.com/downloads/guis[here].
+
+Note: Most IDEs and many text editors (like VS Code, Sublime Text, etc.) have decent Source Control integration in them as well.
+
+===== Create a GitHub Account
+ 
+GitHub has a fantastic https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account[walkthrough] of setting up a brand new account.
+
+===== Create a new Repository in your GitHub Account
+
+1. Please create a *private* repository in your GitHub account called `toc-foundations-notes`.
+2. When creating please check the "Initialize this repository with a README" option.
+3. For the .gitignore dropdown just choose your favorite language.
+4. For license it's fine to leave that as none.
+

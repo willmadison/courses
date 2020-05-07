@@ -42,7 +42,7 @@ This workshop/presentation is licensed under the https://opensource.org/licenses
 
 *11:00am - 12:00pm: Cutting our Teeth (Frequently Used Commands)*
 [%interactive]
-* [ ] Activity: Get the Bag (ehh code)!
+* [ ] Activity: Git the Bag (ehh code)!
 * [ ] Activity: Anatomy of a Git Repository
 [%interactive]
 ** [ ] The .git folder
