@@ -137,7 +137,7 @@ who prefer a different user experience as it pertains to their git workflow. Her
 These are the top three, anecdotally based on the developers I know that prefer such tools. 
 There are many more as well listed https://git-scm.com/downloads/guis[here].
 
-Note: Most IDEs and many text editors (like VS Code, Sublime Text, etc.) have decent Source Control integration in them as well.
+__Note: Most IDEs and many text editors (like VS Code, Sublime Text, etc.) have decent Source Control integration in them as well.__
 
 ===== Create a GitHub Account
  
@@ -149,4 +149,3 @@ GitHub has a fantastic https://help.github.com/en/github/getting-started-with-gi
 2. When creating please check the "Initialize this repository with a README" option.
 3. For the .gitignore dropdown just choose your favorite language.
 4. For license it's fine to leave that as none.
-
