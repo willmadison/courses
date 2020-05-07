@@ -21,8 +21,6 @@ In this exercise we're going to clone two repositories/projects down to your mac
 
 2. Clone your newly created repository down to your machine. (Tip: the url you'll need can be found on GitHub in the highlighted location below.)
 
-// TODO: Put screenshot of GitHub repo homepage here..
-
 3. Clone the repository (https://github.com/willmadison/courses.git) for this presentation down to your machine. (Tip: This will be great for following along!)
 
 4. To confirm that everything cloned correctly navigate back to the location we started out in Step 0 and ensure you see two folders there one for each of the repositories we just cloned.
