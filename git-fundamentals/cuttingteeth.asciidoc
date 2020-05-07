@@ -115,4 +115,13 @@ As you interrogate what changed you should see output similar to this:
 
 [source,bash]
 ----
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files: <1>
+  (use "git add <file>..." to include in what will be committed)
+
+        git-fundamentals/scratchpad.md
 ----
+<1> When something is untracked, that basically means `git` has no record of this items history (i.e. it's brand new)
