@@ -23,7 +23,7 @@ In this exercise we're going to clone two repositories/projects down to your mac
 
 3. Clone the repository (https://github.com/willmadison/courses.git) for this presentation down to your machine. (Tip: This will be great for following along!)
 
-4. To confirm that everything cloned correctly navigate back to the location we started out in Step 0 and ensure you see two folders there one for each of the repositories we just cloned.
+4. To confirm that everything cloned correctly navigate back to the location we started out in Step 1 and ensure you see two folders there one for each of the repositories we just cloned.
 
 = Activity: What's the 411? 
 
@@ -206,7 +206,7 @@ __Note: I sometimes am a bit obsessive about checking the status prior to commit
 
 __Note: When you do this by default git will attempt to open a text editor (usually something that feels like Vim a popular light weight editor common on Unix/Linux systems).__
 
-TIP: In order to write a commit message using this vim-like editor type the letter `i` to enter "insert mode" (basically the mode most commonly used text editors are in by default). Type your message, then hit the `esc` key to go back into "command mode". Once you're happy with the message type in `:wq` (which means write (save) and quit) to exit the editor.
+TIP: In order to write a commit message using this vim-like editor type the letter `i` to enter "insert mode" (basically the mode most commonly used text editors are in by default). Type your message, then hit the `esc` key to go back into "command mode". Once you're happy with the message while in command mode, type in `:wq` (which means write (save) and quit) to exit the editor.
 
-TIP: Going forward if your commit message is relatively short you can use the inline syntax to avoid getting trapped in an editor `git commit -m "Your message here..."`.
+TIP: Going forward if your commit message is relatively short, you can use the inline syntax to avoid getting trapped in an editor: `git commit -m "Your message here..."`.
 TIP: There's also a form that will automatically add changes to currently tracked files at commit time while you're supplying a message like so: `git commit -am "Your message here..."`. This can save a lot of repetitive `git add` calls :).
