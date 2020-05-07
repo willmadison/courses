@@ -42,15 +42,15 @@ repository. The most prevalent centralized SCM solutions in industry are:
 - Perforce
 
 Around about 2009-2010, about a year or so after GitHub was released, Git really started to challenge SVN for the hearts
-and minds of the developer community. Git was a welcome reprieve on two primary fronts: 1) It made branching and merging
-incredibly easy and non painful (a really sore point for SVN users) and 2) You were able to branch, commit, and 
+and minds of the developer community. Git was a welcome reprieve on two primary fronts: 1) It made having many parallel streams
+and combining them back together incredibly easy and non painful (a really sore point for SVN users) and 2) You were able to 
 have full workflows without a persistent connection to a remote repository (yay! Working on airplanes!). Let's 
 talk a bit more about Distributed Source Control Management.
 
 ==== Distributed (De-centralized) Source Control Management
 
 In the distributed source control management world, every team member has their own copy of the full history
-of the source tree/code. In contras to client/server SCM there is no single solitary source of truth upon 
+of the source tree/code. In contrast to client/server SCM, there is no single solitary source of truth upon 
 which every team member relies (Disclaimer: generally there is a defacto source of truth that most people 
 use in practice but this isn't a hard and fast rule as we'll soon see). Generally, no useful work can happen 
 in a client/server world without a connection to the central repository. 
@@ -67,10 +67,12 @@ about the history of git.
 
 For the full story please feel free to read a colorful take here in the official https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git[Git Book].
 
+TL;DR; (Too Long, Didn't Read)
+
 - Git was created by Linus Torvolds (the creator of Linux, well specifically the Linux Kernel which is the heart of the OS)
 - It was created out of necessity as the Linux team lost free usage of their incumbent SCM...so Git was born! 
 
-The principles that guided Git's design were
+Git's guiding design principles were:
 
 - Speed
 - Simplicity
@@ -86,7 +88,7 @@ Before we delve into the belly of practical, every day usage of `git` we'll need
 
 ===== Downloading Git Tools
 
-First thing first, in order to use `git` you'll need to install it! Detailed instructions for your operating system 
+First things first, in order to use `git` you'll need to install it! Detailed instructions for your operating system 
 can be found https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[here]. Let us know if you have any problems!
 
 To confirm your installation please execute the following command `git --help --all`.
@@ -120,6 +122,8 @@ available git commands in '/usr/lib/git-core'
   check-mailmap             get-tar-commit-id         pack-redundant            stage
   check-ref-format          grep ...
 ----
+
+__Note: Don't feel overwhelmed about all those options, we'll distill those down to the handful you'll need everyday here momentarily.__
 
 ===== Optional: Download a git desktop client
 
