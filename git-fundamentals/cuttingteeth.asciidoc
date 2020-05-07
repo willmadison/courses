@@ -76,6 +76,43 @@ commit 64c7eeb8122e0160d338487f9473b5fc40b06067
 <1> Every change made in a git repository happens by ``commit``ing the change to the repository's history. Each commit get assigned a long identifier called a `commit hash` (thankfully when we need this we typically only need the first handful of characters).
 <2> Who made this change?
 <3> When was this change made?
-<4> What did the person say when they made this change? (This is also called the commit "message")
+<4> What did the person say when they made this change? (This is also called the `commit` "message")
 
 == Review: Anatomy of a git repository
+
+Let's take a brief look at one of our local repositories.
+
+1. Navigate back to your `toc-foundations-notes` repository location.
+2. Take a look at the files there [this can be done by running these commands `ls -Flah` (Mac/Linux) or `dir` (Windows)]
+
+The directory should look like this:
+
+[source,bash]
+----
+total 24K
+drwxrwxr-x 4 ubuntu ubuntu 4.0K May  7 00:07 ./
+drwxr-xr-x 5 ubuntu ubuntu 4.0K May  7 00:07 ../
+drwxrwxr-x 8 ubuntu ubuntu 4.0K May  7 04:49 .git/ <1>
+-rw-rw-r-- 1 ubuntu ubuntu 1.1K May  7 00:07 LICENSE
+-rw-rw-r-- 1 ubuntu ubuntu   66 May  7 00:07 README.md
+-rw-rw-r-- 1 ubuntu ubuntu  296 Aug 12  2019 .gitignore <2>
+----
+<1> This directory is a special directory git uses internally to keep track of what's changed in its "index" (think of it like filing cabinet of all the stuff in the repo and what's happened to it)
+<2> The .gitignore file is a special file that can instruct git to safely ignore certain files/directories, etc. in your repo.
+
+= Activity: Maybe change isn't so hard? 
+
+Now, let's change something!
+
+1. In your `toc-foundations-notes` repository, create a new directory called `git-fundamentals`.
+2. Inside of your newly directory create a new file: `scratchpad.md`.
+3. Using your favorite text editor, open `scratchpad.md`.
+4. At the top of your scratchpad enter the following text: "# This is my scratchpad, there are many like it but this one is mine..." (without quotes)
+5. Save your changes.
+6. Back in your terminal, interrogate the status of things after your change. What do you see?
+
+As you interrogate what changed you should see output similar to this:
+
+[source,bash]
+----
+----
