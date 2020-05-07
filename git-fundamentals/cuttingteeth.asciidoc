@@ -1,2 +1,82 @@
 [#cuttingteeth]
 = Cutting Our Teeth
+
+> "Let's get it started! Ha!" - The Black Eyed Peas
+
+= Activity: Git the Bag (ehh Code)
+
+Before we can do anything productive in our team's code base we'll need to git (pun intended) the code :).
+
+In order to do that the `git` command we'll rely on is `git clone`. 
+
+Cloning a repository brings down the full repository in all its glory down to your local machine with its full history.
+
+The format for a git clone is like so: `git clone <git repository URL>`
+
+Let's try it!
+
+In this exercise we're going to clone two repositories/projects down to your machine.
+
+0. Open a terminal on your machine and navigate to a folder on your machine that will hold your local copies of the code (__I often like to use a folder like ~/git/github or c:\Users\will\git\github__).
+
+1. Clone your newly created repository down to your machine. (Tip: the url you'll need can be found on GitHub in the highlighted location below.)
+
+// TODO: Put screenshot of GitHub repo homepage here..
+
+2. Clone the repository (https://github.com/willmadison/courses.git) for this presentation down to your machine. (Tip: This will be great for following along!)
+
+3. To confirm that everything cloned correctly navigate back to the location we started out in Step 0 and ensure you see two folders there one for each of the repositories we just cloned.
+
+= Activity: What's the 411? 
+
+One of the commands you'll find yourself running quite often to understand what the state of things are is `git status`. `git status`
+interrogates your local copy of the repository and informs you of what state you're currently in (i.e. what have you modified, if anything, etc.)
+
+0. Try it! Execute `git status` and take a look at the output.
+
+`git status` should return output similar to this:
+
+[source,bash]
+----
+On branch master <1>
+Your branch is up to date with 'origin/master'. <2>
+
+nothing to commit, working tree clean <3>
+----
+<1> Most useful work in git happens on a branch (think of a branch as a timeline/stream of changes taken place to the code). `master` is the default branch every repo comes with but there can be many!
+<2> As we noted previously, git is a Distributed SCM `origin` is the internal name of the remote repository location from which we initially cloned.
+<3> "working tree" generally refers to this local working copy in this directory. It's clean when we haven't made any changes (yet).
+
+In addition to understanding the current state of things, it's often also very handy to understand what has teken place so far.
+
+In order to do that we rely on a command called `git log`. `git log` shows us the full history (if we care to scroll) of the changes 
+made to the repository.
+
+Let's Try It!
+
+0. First, navigate to directory that contains this course's documents.
+1. Once you're there execute a `git log` command.
+2. The output should look something like this:
+
+[source,bash]
+----
+commit 46c087dd6e1ca5bcc23203edb7a749990dab6d13 (HEAD -> master, origin/master, origin/HEAD) <1>
+Author: Will Madison <wmadisondev@gmail.com> <2>
+Date:   Thu May 7 03:43:30 2020 +0000 <3>
+
+    one more formatting tweak <4>
+
+commit 009007457f57ea3d45769551cdd81eba3b7e548a
+Author: Will Madison <wmadisondev@gmail.com>
+Date:   Thu May 7 03:41:49 2020 +0000
+
+    fixing some typos and tweaking some formatting
+
+commit 64c7eeb8122e0160d338487f9473b5fc40b06067
+:
+----
+<1> Every change made in a git repository happens by `commit`ing the change to the repository's history. Each commit get assigned a long identifier called a `commit hash` (thankfully when we need this we typically only need the first handful of characters).
+<2> As we noted previously, git is a Distributed SCM `origin` is the internal name of the remote repository location from which we initially cloned.
+<3> "working tree" generally refers to this local working copy in this directory. It's clean when we haven't made any changes (yet).
+
+== Review: Anatomy of a 
