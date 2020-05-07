@@ -17,22 +17,22 @@ Let's try it!
 
 In this exercise we're going to clone two repositories/projects down to your machine.
 
-0. Open a terminal on your machine and navigate to a folder on your machine that will hold your local copies of the code (__I often like to use a folder like ~/git/github or c:\Users\will\git\github__).
+1. Open a terminal on your machine and navigate to a folder on your machine that will hold your local copies of the code (__I often like to use a folder like ~/git/github or c:\Users\will\git\github__).
 
-1. Clone your newly created repository down to your machine. (Tip: the url you'll need can be found on GitHub in the highlighted location below.)
+2. Clone your newly created repository down to your machine. (Tip: the url you'll need can be found on GitHub in the highlighted location below.)
 
 // TODO: Put screenshot of GitHub repo homepage here..
 
-2. Clone the repository (https://github.com/willmadison/courses.git) for this presentation down to your machine. (Tip: This will be great for following along!)
+3. Clone the repository (https://github.com/willmadison/courses.git) for this presentation down to your machine. (Tip: This will be great for following along!)
 
-3. To confirm that everything cloned correctly navigate back to the location we started out in Step 0 and ensure you see two folders there one for each of the repositories we just cloned.
+4. To confirm that everything cloned correctly navigate back to the location we started out in Step 0 and ensure you see two folders there one for each of the repositories we just cloned.
 
 = Activity: What's the 411? 
 
 One of the commands you'll find yourself running quite often to understand what the state of things are is `git status`. `git status`
 interrogates your local copy of the repository and informs you of what state you're currently in (i.e. what have you modified, if anything, etc.)
 
-0. Try it! Execute `git status` and take a look at the output.
+1. Try it! Execute `git status` and take a look at the output.
 
 `git status` should return output similar to this:
 
@@ -54,9 +54,9 @@ made to the repository.
 
 Let's Try It!
 
-0. First, navigate to directory that contains this course's documents.
-1. Once you're there execute a `git log` command.
-2. The output should look something like this:
+1. First, navigate to directory that contains this course's documents.
+2. Once you're there execute a `git log` command.
+3. The output should look something like this:
 
 [source,bash]
 ----
@@ -76,7 +76,8 @@ commit 64c7eeb8122e0160d338487f9473b5fc40b06067
 :
 ----
 <1> Every change made in a git repository happens by `commit`ing the change to the repository's history. Each commit get assigned a long identifier called a `commit hash` (thankfully when we need this we typically only need the first handful of characters).
-<2> As we noted previously, git is a Distributed SCM `origin` is the internal name of the remote repository location from which we initially cloned.
-<3> "working tree" generally refers to this local working copy in this directory. It's clean when we haven't made any changes (yet).
+<2> Who made this change?
+<3> When was this change made?
+<4> What did the person say when they made this change? (This is also called the commit "message")
 
-== Review: Anatomy of a 
+== Review: Anatomy of a git repository
