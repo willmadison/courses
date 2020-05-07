@@ -130,7 +130,7 @@ Untracked files: <1>
 
 > "We next. You like baseball? We on deck." - Eddie Murphy (as Rayford Gibson) in Life 
 
-So far we've made a change locally and we can see that something changed, but because `git` has no knowledge of this file's history it can't actually tell us 
+So far we've made a change locally and we can see that something changed but, because `git` has no knowledge of this file's history it can't actually tell us 
 what exactly changed in that untracked file.
 
 Let's `add` this item to ``git``'s tracking mechanism.
