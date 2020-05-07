@@ -124,4 +124,18 @@ Untracked files: <1>
 
         git-fundamentals/scratchpad.md
 ----
-<1> When something is untracked, that basically means `git` has no record of this items history (i.e. it's brand new)
+<1> When something is untracked, that basically means `git` has no record of this item's history (i.e. it's unversioned by git).
+
+So we can see that something changed, but what exactly changed in that untracked file?
+
+Well, as this is a question that developers will often ask, `git` has a built in mechanism to determine what changes have taken place: `git diff`.
+
+Let's try it out!
+
+Execute `git diff` in your terminal to see a picture of what has been modified in your working tree/directory.
+
+You should see output similar to this:
+
+[source,bash]
+----
+----
