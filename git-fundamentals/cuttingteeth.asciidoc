@@ -210,3 +210,21 @@ TIP: In order to write a commit message using this vim-like editor type the lett
 
 TIP: Going forward if your commit message is relatively short, you can use the inline syntax to avoid getting trapped in an editor: `git commit -m "Your message here..."`.
 TIP: There's also a form that will automatically add changes to currently tracked files at commit time while you're supplying a message like so: `git commit -am "Your message here..."`. This can save a lot of repetitive `git add` calls :).
+
+= Activity: Oh my bad...🤦 (undoing local changes)
+
+So this is all fine and well, but what if you make a mistake locally?
+
+Let's see what we can do.
+
+1. Navigate to your `toc-foundations-notes` directory.
+2. Open your `scratchpad.md` file.
+3. Add in the following text (without quotes): "#Thsi was SUCH a mistake :( [sic]"
+4. Ensure that git sees the correct differences.
+
+__Note: He're we're deliberately making this mistake but, being that we're all human it's entirely possible that this kind of "fat-finger" error can happen in real life :)__
+
+Now, we have made an erroneous change. What can we do? `git reset` to the rescue!
+
+1. Execute `git reset --hard HEAD`.
+2. Interrogate the status of your working directory.
