@@ -21,10 +21,10 @@ Here's the rough outline for how today will flow...
 | Description
 
 | 10:00 | <<welcome>>
-| 10:00 | Introductions (10 minutes)
+| 10:00 | Introductions (5 minutes)
 | 10:10 | <<gitupandrunning>>
-| 11:00	| Break (5 minutes)
-| 11:05	| <<cuttingteeth>>
+| 10:50	| Break (10 minutes)
+| 11:00	| <<cuttingteeth>>
 | 12:00	| Lunch (60 minutes)
 | 13:00	| <<branching>>
 | 13:45	| Break (5 minutes)

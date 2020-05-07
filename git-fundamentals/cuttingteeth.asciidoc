@@ -126,16 +126,86 @@ Untracked files: <1>
 ----
 <1> When something is untracked, that basically means `git` has no record of this item's history (i.e. it's unversioned by git).
 
-So we can see that something changed, but what exactly changed in that untracked file?
+= Activity: We on Deck!
+
+> "We next. You like baseball? We on deck." - Eddie Murphy (as Rayford Gibson) in Life 
+
+So far we've made a change locally and we can see that something changed, but because `git` has no knowledge of this file's history it can't actually tell us 
+what exactly changed in that untracked file.
+
+Let's `add` this item to ``git``'s tracking mechanism.
+
+To do that, we leverage the `add` command.
+
+``add``ing an item in `git` "stages" that item to be included in the set of changes that gets committed to ``gits``'s
+log of the historical changes that have taken place.
+
+1. Execute `git add git-fundamentals/scratchpad.md` from your `toc-foundations-notes` repository.
+2. Then, interrogate the status of your changes in the repository.
+
+Once you do, you should see something like this:
+
+[source,bash]
+----
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage) <1>
+
+        new file:   git-fundamentals/scratchpad.md
+----
+<1> When something is "added" in git it becomes "staged". Which means that this change will be included the next time we're ready to `commit` the changes we've made to git history permanently.
+
+__Note: There are some developers who favor adding items in this style `git add .` which basically says add everything in this current directory. I prefer to be more explicit as adding "dot" could unintentionally stage something you didn't intend to stage.__
+
+= Activity: What's the difference?!
+
+So far, we can see that changes have been made and are going to be committed but, what's actually changed?
 
 Well, as this is a question that developers will often ask, `git` has a built in mechanism to determine what changes have taken place: `git diff`.
 
 Let's try it out!
 
-Execute `git diff` in your terminal to see a picture of what has been modified in your working tree/directory.
+Execute `git diff --staged` in your terminal to see a picture of what has been modified in your working tree/directory.
 
 You should see output similar to this:
 
 [source,bash]
 ----
+diff --git a/git-fundamentals/scratchpad.md b/git-fundamentals/scratchpad.md
+new file mode 100644
+index 0000000..a81a99f
+--- /dev/null <1>
++++ b/git-fundamentals/scratchpad.md <2>
+@@ -0,0 +1 @@
++# This is my scratchpad, there are many like it but this one is mine... <3>
 ----
+__Note: This view is called a "unified" or "inline" diff. Which shows us the difference between what we have and what was already there. __
+<1> This line indicates that this file was never there before.
+<2> Indicates that this is the incoming modification.
+<3> What was actually added. (The leading `+` at the front of the line indicates an addition, a leading `-` indicates a removal).
+
+= Activity: Make it last forever 🎶
+
+> "It is time..." - Rafiki (The Lion King)
+
+Now, let's make this change final!
+
+We've alluded to this quite a bit already but in order for a change to really count permanently it has to be ``commit``ed.
+
+You can think of committing just like you would think of "committing something to memory". It's often the final
+step after you're satisfied with the code you've written.
+
+__Note: I sometimes am a bit obsessive about checking the status prior to committing to make sure that only things I intended to commit are being committed.__
+
+1. Navigate to your `toc-foundations-notes` directory.
+2. Optional: Interrogate the status of your working directory/tree.
+3. Execute `git commit`.
+
+__Note: When you do this by default git will attempt to open a text editor (usually something that feels like Vim a popular light weight editor common on Unix/Linux systems).__
+
+TIP: In order to write a commit message using this vim-like editor type the letter `i` to enter "insert mode" (basically the mode most commonly used text editors are in by default). Type your message, then hit the `esc` key to go back into "command mode". Once you're happy with the message type in `:wq` (which means write (save) and quit) to exit the editor.
+
+TIP: Going forward if your commit message is relatively short you can use the inline syntax to avoid getting trapped in an editor `git commit -m "Your message here..."`.
