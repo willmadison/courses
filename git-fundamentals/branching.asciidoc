@@ -1,2 +1,94 @@
 [#branching]
 = Branching
+:imagesdir: ./images/
+
+= Activity: There's a branch for that!
+
+Yay!! Branches!!
+
+image::tree-branches.jpeg[]
+
+Well not those branches...these branches:
+
+image::git-flow.png[]
+
+So far we've only really interacted with one branch, the default branch `master`. We've made at least one commit thus far and have seen how `git` basically keeps a running list of these change/commits in it's `log`. 
+
+At the highest level you can think of a `branch` generally as a reference to a given commit in a sequence of commits.
+
+As we've seen `git` maintains a special reference called `HEAD` that points to the commit you're currently on (usually the most recent commit).
+
+To create a new branch we leverage the `git branch <branch_name>` command.
+
+Let's try it!
+
+Before we do this let's get a fresh repository to play with.
+
+1. Navigate back to the GitHub repository for this course (https://github.com/willmadison/courses).
+2. `Fork` this repository (this creates your own copy of the repo under your GitHub username/account so you can push, pull and branch to your heart's desire.)
+3. Clone your newly ``fork``ed repository to a directory on your machine called `my-courses` (Hint: You can specify a folder name on clone like so `git clone <repo_url> <directory_name>`).
+4. At this point you should have the original `courses` (Will's Copy) and your `my-courses` (which is a `fork` [fancy word for copy] of Will's `courses` repo).
+5. Within your `my-courses` let's take a look and see what branches are there. Execute a `git branch` command (Note: when we don't specify a branch name `git` just shows us a list of all of our local branches).
+6. Create a branch called `testing`. Execute `git branch testing`.
+7. View all the branches and ensure that it's there.
+
+Once we've done that here's what `git` does for us:
+
+Here's a visual:
+
+image::new-branch-layout.png[]
+
+As we can see, `git` created a new branch for us called `testing` which points to the same commit we're currently on. But `HEAD` is still pointing to master. If we want to actually be on the new branch that we just created we actually have to `checkout` that branch (kinda like checking out a book from a library, can't take it home without checking it out with the `git` librarian). Let's `checkout` the `testing` branch:
+
+1. Execute a `git checkout testing` command.
+
+Once we `checkout` the newly created branch our `HEAD` references moves there like so:
+
+image::new-branch-checkout.png[]
+
+Now we can make changes, commit things that would only be recorded on the `testing` branch. This is an extremely useful capability for teams of software engineers. 
+
+TIP: Checking out a newly created branch happens so often that there's a convenient short cut which will a) create the new branch and b) check it out all in one go! That shorthand command is `git checkout -b <branch_name>` (I use it almost exclusively).
+
+= Activity: A day in the life!
+
+Imagine you're working on a bug that takes you 2-3 days to resolve. You'd really like to make those changes and have a history without holding everyone else up waiting on your changes, that's a perfect situation for branches!
+
+Branching is *CORE* to all `git` workflows. All meaningful work for most developers involves one (and often more) branch(es).
+
+A typical workflow and day in the life of a developer goes like this:
+
+1. Developer Judy is assigned or picks up the next highest priority issue on the teams backlog. Let's imagine that issue is a bug with 1234 as it's identifier.
+2. Developer Judy will `checkout` a new *feature branch* called `bugFix/1234`. (__Note: A *feature branch* is a [.underline]#short lived# branch that will contain all the necessary changes to build a given feature/fix.__)
+3. Developer Judy fixes the bug and commits her changes to branch `bugFix/1234`, and pushes them up to the `origin` repository.
+4. Developer Judy opens a pull request (often abbreviated PR) in her teams source control system (GitHub, GitLab, BitBucket, something like that...) Asking for her changes from the `bugFix/1234` branch into the bleeding edge `develop` branch. Which can be reviewed by someone else on their team for shared context and double checking.
+5. Once that PR has been approved, Judy's changes will be incorporated (``merge``d) into the `develop` branch.
+
+Let's squash a bug!
+
+You've just joined our team and immediately the Product Manager reports a bug that greetings on the web site aren't displaying correctly (Oh no!). Your Tech Lead Will (👀) felt this would be a great first issue for you to take on! For this exercise, please reference this https://github.com/willmadison/courses/issues/1[GitHub Issue]
+
+The core engine that provides the greating capability can be found in the `exercises` folder of your `my-courses` repository. Your Tech Lead has informed you that there should be failing tests in place already to help you figure out what's going wrong.
+
+Please fix this in a feature branch and push that feature branch up to your remote repository when you're done.
+
+__Note: This exercise can be completed in *Go*, *JavaScript*, *Java/Kotlin*, or *Python*. You only need to solve it in one of these languages not all.__
+
+= Activity: Lane's ending...time to merge!
+
+For this exercise we're going to open up our first pull request (PR). But first, we're going to play with remotes one last time.
+
+When contributing to open source repositories, one of the first things you'll want to do is `fork` the source repository to your own copy, make your changes in a *feature branch* in your reposiory. `merge` those change into the `master` branch of your fork, then open up a pull request asking the original owner you forked from to `pull` in the fixes/changes you made.
+
+While you're in the process of doing this there could be many other changes being made to the original source repository which is usually considered `upstream` from you. The convention then is for each fork to have an `upstream` branch that points to the original repository just in case there are changes made underneath you while you're making your changes.
+
+Let's add an upstream to your local repo for Will's copy of courses.
+
+1. Navigate to your `my-courses` repository locally.
+2. Add a new remote using the following command `git remote add upstream <remote_url>` (Note: the new remote url you'll want is the one for Will's courses repository @ https://github.com/willmadison/courses.git)
+3. To ensure we have all the correct remotes let's view them all (Hint: `git remote -v`)
+4. Once you've done that let's look at all of the branches we have. Execute a `git branch -a` (This will display all of the branches)
+5. Remember that `git fetch` we did that appeared to not do anything, compare the branches that are reportedly available at the `upstream` remote with the branches in your local copy of Will's `courses` repository.
+
+
+
