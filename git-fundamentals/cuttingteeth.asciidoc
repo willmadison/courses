@@ -209,4 +209,5 @@ __Note: When you do this by default git will attempt to open a text editor (usua
 TIP: In order to write a commit message using this vim-like editor type the letter `i` to enter "insert mode" (basically the mode most commonly used text editors are in by default). Type your message, then hit the `esc` key to go back into "command mode". Once you're happy with the message while in command mode, type in `:wq` (which means write (save) and quit) to exit the editor.
 
 TIP: Going forward if your commit message is relatively short, you can use the inline syntax to avoid getting trapped in an editor: `git commit -m "Your message here..."`.
-TIP: There's also a form that will automatically add changes to currently tracked files at commit time while you're supplying a message like so: `git commit -am "Your message here..."`. This can save a lot of repetitive `git add` calls :).
+
+TIP: There's also a form that will automatically `add` changes to currently tracked files at commit time while you're supplying a message like so: `git commit -am "Your message here..."`. This can save a lot of repetitive `git add` calls :).
