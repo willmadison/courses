@@ -1,0 +1,4 @@
+
+def speak(name):
+    return ''
+
