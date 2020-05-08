@@ -61,6 +61,7 @@ This workshop/presentation is licensed under the https://opensource.org/licenses
 [%interactive]
 * [ ] Activity: There's a branch for that!
 * [ ] Activity: Lane's ending...time to merge!
+* [ ] Activity: I'm feeling conflicted... 🌚 ️
 * [ ] Activity: Tag it and Bag it! 🏷️
 * [ ] Activity: What are the cool kids doing (Branch management strategies)! 😎
 [%interactive]

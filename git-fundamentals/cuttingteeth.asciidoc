@@ -30,7 +30,10 @@ In this exercise we're going to clone two repositories/projects down to your mac
 One of the commands you'll find yourself running quite often to understand the state of things is `git status`. `git status`
 interrogates your local copy of the repository and informs you of what state you're currently in (i.e. what have you modified (if anything), etc.)
 
-1. Try it! Execute `git status` and take a look at the output.
+Let's Try it!
+
+1. Navigate to the folder containing your `toc-foundations-notes` repository.
+2. Execute `git status` and take a look at the output.
 
 `git status` should return output similar to this:
 
@@ -239,3 +242,47 @@ When resetting you can actually reset to any previous commit if you want `HEAD` 
 So far we've only talked briefly about the notion of remote repositories and teir use. Let's look at them a bit more deeply.
 
 `git` includes a `git remote` subcommand which allows us to administer and view all of the remotes associated with our repository.
+
+Let's take it for a spin.
+
+1. Execute `git remote -v` from your `toc-foundations-notes` repository.
+
+You should see something like this:
+
+[source,bash]
+----
+origin  git@github.com:willmadison/courses.git (fetch)
+origin  git@github.com:willmadison/courses.git (push)
+----
+
+Here we can see that each origin is delineated by which one can be used for ``push``ing (or ``fetch``ing [which we'll get to here soon]) and has a name. In this case
+the only remote we have is the one we started with `origin` but, you can have as many as your heart desires (that's what makes `git` distributed).
+
+= Activity: Behind the times... (Getting the latest code)
+
+So we've made local changes and ``push``ed them up to our remote repository for safe keeping. But, how would we get updates from our remote repositories if someone else made a change other than us?
+
+Well, there are a couple of ways to sync your local repository with one (or more) of your remote repositories, let's talk about each.
+
+== Fetching
+
+`git` provides a mechanism that allows us to synchronize our local references with their respective remotes in a non destructive way. To do that we can execute a `git fetch <remote_name>` command. This will pull in all the information that exists on remote that we don't have yet but won't force us to integrate those changes into what we're currently working on and we can do so at a later time.
+
+== Pulling
+
+If indeed we do want to immediately integrate any remote changes into what we're currently working on `git` can do that too!. To accomplish this immediate integration of new data we can execute a `git pull <remote_name> <branch_name>`. `git pull` logically performs a `fetch` (getting all the latest info) followed by a `merge` (integration of that new information with what you currently have, don't worry we're cover this right after lunch!) 
+
+Note: If you omit the remote name and branch name AND the branch you're currently working on is setup to track (synchronize with) a remote branch of the same name, `git pull` will automatically leverage origin/branch_name as the source of new information when you execute a pull command. 
+
+Enough talking! Let's try them out!
+
+1. Navigate to directory that contains this course's documents (I've been making changes while we've been talking).
+2. Once you're there execute a `git pull origin master` command.
+3. Take a look at the history (__Hint: ``git``'s log may be a good place to start) to see what changed.
+4. Optional: If you really want to do a deep dive of a given commit to see what changed you can leverage the `git show <commit_hash>` command.
+
+Let's take ``fetch``ing for a spin!
+
+1. Navigate to directory that contains this course's documents.
+2. Once you're there execute a `git fetch origin` command.
+3. Note: It may look like nothing happened...that's ok! We'll take a deeper look right after the break! Let's get some food!!!
