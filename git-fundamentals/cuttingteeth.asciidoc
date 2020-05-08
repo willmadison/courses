@@ -228,3 +228,13 @@ Now, we have made an erroneous change. What can we do? `git reset` to the rescue
 
 1. Execute `git reset --hard HEAD`.
 2. Interrogate the status of your working directory.
+
+__Note: HEAD is a special reference to the most recently commited change in the branch that we're currently working. If you look at `git log` you can see where HEAD (both local and remote HEADs) is currently.__ 
+
+When resetting you can actually reset to any previous commit if you want `HEAD` is just the most commonly used commit for resetting purposes. We'll cover randomly resetting to other places later today.
+
+= Activity: To the Mothership
+
+So far we've only talked briefly about the notion of remote repositories and teir use. Let's look at them a bit more deeply.
+
+`git` includes a `git remote` subcommand which allows us to administer and view all of the remotes associated with our repository.

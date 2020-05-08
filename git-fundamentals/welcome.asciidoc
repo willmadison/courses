@@ -50,8 +50,8 @@ This workshop/presentation is licensed under the https://opensource.org/licenses
 ** [ ] lightning fast branch primer
 ** [ ] local vs. remote
 * [ ] Activity: Maybe change isn't so hard?
-* [ ] Activity: Oh my bad...🤦 (undoing local changes)
 * [ ] Activity: Make it last forever 🎶
+* [ ] Activity: Oh my bad...🤦 (undoing local changes)
 * [ ] Activity: To the Mothership (Intro to Remotes)
 * [ ] Activity: Behind the times...(Pulling down latest code)
 
