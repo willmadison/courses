@@ -68,7 +68,9 @@ This workshop/presentation is licensed under the https://opensource.org/licenses
 [%interactive]
 ** [ ] Trunk based development
 ** [ ] Git Flow
+** [ ] GitHub Flow
 ** [ ] GitLab Flow
+** [ ] Others?
 
 *2:00 - 3:00pm: Oh you fancy!? (Advanced Git Workflows)*
 [%interactive]

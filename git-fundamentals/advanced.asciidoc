@@ -1,2 +1,121 @@
 [#advanced]
 = Advanced Git Topic/Workflows
+
+= Activity: Typing in passwords is so last year!
+
+For your `toc-foundations-notes` repository, you may have noticed that GitHub required you to type in your GitHub credentials (username/password) before you were allowed to clone the repository.
+
+This is all fine and good...NOW. However, as you continue to build your portfolio on GitHub (or if you're OCD or have had your identity stolen before like me) you'll want to enable 2FA (two factor authentication) on your GitHub account.
+
+When you do that, clone repositories becomes a bit more painful as you'll be required to use either a `personal access token` or `SSH key` to clone your private repositories.
+
+Normally ``SSH key``s can be daunting as you'd have to have different keys on every machine you work on and configure them seperately in GitHub...Normally.
+
+But times they are a changing!
+
+I use a tool called https://krypt.co/developers/[Krypton] to manage all my SSH keys and it's AMAZING.
+
+Let's all get Krypton set up on to manage our SSH keys so we can be done with those pesky passwords.
+
+1. Download the Krypton mobile app from your respective App Stores.
+2. Download the Krypton command line utility `kr` to your development machine (Instructions https://krypt.co/developers/[here]. __Note: If you are a Windows user take a look at this https://github.com/kryptco/kr/issues/87[GitHub issue] tips for getting this working on Windows__) 
+3. In the Krypton mobile app ensure to enable `Developer Mode`.
+4. Now that we have all our tools installed, let's `pair` our mobile phone to the machine we're working from by running `kr pair`.
+5. Once the QR code is displayed on screen use your Krypton app on your mobile device to capture the QR code using the pair option near the bottom of the screen.
+6. Now that your device is ``pair``ed let's configure our Krypton  keys to our GitHub account. From your terminal run `kr github`. (__Note: if this doesn't work we'll leverage `kr copy` to copy things to GitHub__).
+7. Now that GitHub is properly configured, let's update our `toc-foundations-notes` repository to use `ssh` instead of `https` like we've been doing. To do this we'll whip out our old friend `git remote`. *Execute a `git remote set-url origin <ssh_url> <https_url>` command* (__Note: we can get both of these url's from our repository's GitHub page__).
+8. Run `git remote -v` to ensure that the remote urls got updated correctly.
+9. Now attempt to do a `git pull origin master` and watch the magic happen!
+
+TIP: Krypton will leverage Push Notifications sent to your mobile device to allow access to your keys for the purposes of ssh-ing. Just approve it when the notification pops up.
+
+= Activity: Prettying up the git log!
+
+One of my favorite more advanced features of `git` are aliases. These are handy little tips/tricks you can do in git to make things easier/nicer for your `git` usage.
+
+Let's add an alias to make the logs prettier!
+
+Run the following command:
+
+[source,bash]
+----
+git config --global alias.prettify "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+----
+
+Let's break down what this is doing:
+
+- `git config --global`: This is a means by which the end user can configure git globally
+- `alias.prettify`: This defines a new alias under the pseudonym `prettify`
+- `"log --graph -pretty=format:<format_string>"`: This defines `prettify` as an alias for the `log` subcommand of `git` with the commit `graph` displayed decorated according to the format of the `format_string`.
+- `%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset`: (Left to Right) This format specifier tells `git` to change the color of the output to red (`%Cred`) when displaying the commit hash (`%h`), then reset back to the default color (`%Creset`), next a dash followed by the `reference names` (`%d`) (like `HEAD`, `origin/HEAD`, etc.) in parenthesis and yellow (`%C(yellow)`), then reset back to the default color next show the subject/commit message (`%s`) followed by the relative date the change took place in parenthesis and green (`%Cgreen(%cr)`) folowed by the author's name (`%an`) in brackets colored blue with bold styling (`%C(bold blue)`).
+- `--abbrev-commit`: show the abbreviated version of the commit hash
+
+Let's see it in action!
+
+*Execute `git prettify`.*
+
+= Activity: Picky picky picky...
+
+One of the more common advanced `git` operations is the `cherry-pick`.
+
+A `cherry-pick` in `git` allows you to selectively bring commits from a branch in a onesie twosie format rather than whole hog.
+
+`cherry-pick` recently saved my butt at work this week so let's reproduce the issue that I had to show how `cherry-pick` (plus `rebase`, which we'll cover next) saved me.
+
+[.underline]#The Scenario#
+
+The other day I had an open pull request on a branch I was working on locally. I was collaborating with a colleague and wanted to have him run the code I had locally on his machine. My plan was to commit my local changes to a `local-debugging` branch (which already existed), push that branch to our repote repository so he could pull it down to try it out. 
+
+Instead of running `git status` to ensure I was on the right branch before committing, I inadvertently committed to master 😱!!
+
+After a brief moment of panic I remembered that `cherry-pick` could save me and then I could `rebase` to make it look like the whoopsie never happened.
+
+`git cherry-pick` is used as follows: `git cherry-pick <commit_hash>`.
+
+The intent is that you'll be currently in the branch you want this commit to land in.
+
+So let's recreate this scenario for all of us.
+
+1. In your `toc-foundations-notes` local repository create (but don't checkout) a branch called `local-debugging`.
+2. On master make a change and commit it.
+3. Run `git log` to see the commit hash of the most recent commit and copy it!
+4. Checkout the `local-debugging` branch.
+5. Run `git log` to see the lay of the land.
+6. Now `cherry-pick` that commit hash we previously copied.
+7. Run `git prettify` to see what happened.
+
+= Activity: Time Heist (rebase all the things)!
+
+> "With Great Power Comes Great Responsibility..." - Uncle Ben, Spiderman
+
+WARNING: `rebase` is an extremely powerful tool. Like all powerful tools, it must be used wisely and responsibly. 
+
+So, like we discussed in the previous section `rebase` can be used to basically "rewrite" ``git``'s history. This can be really useful in a number of scenarios.
+
+1. You made a commit by mistake to the wrong branch (like I did).
+2. You want a nice clean linear commit history if it took you several commits to figure something out.
+3. You had a typo in a commit message.
+4. and many more useful scenarios...
+
+The way that I personally like to rebase is always interactive by using the following command:
+
+`git rebase -i HEAD~<number_of_commits_back>`
+
+- What this will do is tell get to begin an interactive `rebase` session starting from the current commit (`HEAD`) and going back `number_of_commits_back`.
+
+So let's say I wanted to go back 10 commits and use that as my basis for ``rebase``-ing, I would do so like this:
+
+`git rebase -i HEAD~10`
+
+upon doing so `git` will open up a text editor to allow me to tell it exactly what I want it to do with each commit. Here's what it looks like for example:
+
+[source,bash]
+----
+
+----
+
+= Actvity: Open (Source) Exploration
+
+= Q & A
+
+= Retrospective!
