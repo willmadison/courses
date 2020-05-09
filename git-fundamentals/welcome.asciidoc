@@ -29,26 +29,26 @@ This workshop/presentation is licensed under the https://opensource.org/licenses
 == Today's Schedule
 
 *10:00 - 11:00am: Setting the Stage*
-[%interactive]
-* [X] Introductions
-* [X] Story Time!
-* [X] Programming vs. Software Engineering
-* [X] The case for Source Control
-* [X] Baskin Robbins: 31 (eh 5) Flavors of Source Control Managmement (SCM)
-[%interactive]
-** [X] Centralized vs. Decentralized SCM
-* [X] History of Git
-* [X] Activity: Bootstrapping!
+[options="interactive"]
+* [x] Introductions
+* [x] Story Time!
+* [x] Programming vs. Software Engineering
+* [x] The case for Source Control
+* [x] Baskin Robbins: 31 (eh 5) Flavors of Source Control Managmement (SCM)
+[options="interactive"]
+** [x] Centralized vs. Decentralized SCM
+* [x] History of Git
+* [x] Activity: Bootstrapping!
 
 *11:00am - 12:00pm: Cutting our Teeth (Frequently Used Commands)*
-[%interactive]
-* [X] Activity: Git the Bag (ehh code)!
-* [X] Activity: Anatomy of a Git Repository
-[%interactive]
-** [X] The .git folder
-** [X] The .gitignore file
-** [X] lightning fast branch primer
-** [X] local vs. remote
+[options="interactive"]
+* [x] Activity: Git the Bag (ehh code)!
+* [x] Activity: Anatomy of a Git Repository
+[options="interactive"]
+** [x] The .git folder
+** [x] The .gitignore file
+** [x] lightning fast branch primer
+** [x] local vs. remote
 * [ ] Activity: Maybe change isn't so hard?
 * [ ] Activity: Make it last forever 🎶
 * [ ] Activity: Oh my bad...🤦 (undoing local changes)
@@ -58,14 +58,14 @@ This workshop/presentation is licensed under the https://opensource.org/licenses
 *12:00 - 1:00pm: LUNCH!* 😋 🤤 🥡 🍲
 
 *1:00 - 2:00pm: Branching like a Pro!*
-[%interactive]
+[options="interactive"]
 * [ ] Activity: There's a branch for that!
 * [ ] Activity: A day in the life!
 * [ ] Activity: Lane's ending...time to merge!
 * [ ] Activity: I'm feeling conflicted... 🌚 ️
 * [ ] Activity: Tag it and Bag it! 🏷️
 * [ ] Activity: What are the cool kids doing (Branch management strategies)! 😎
-[%interactive]
+[options="interactive"]
 ** [ ] Trunk based development
 ** [ ] Git Flow
 ** [ ] GitHub Flow
@@ -73,7 +73,7 @@ This workshop/presentation is licensed under the https://opensource.org/licenses
 ** [ ] Others?
 
 *2:00 - 3:00pm: Oh you fancy!? (Advanced Git Workflows)*
-[%interactive]
+[options="interactive"]
 * [ ] Activity: Typing in passwords is so last year!
 * [ ] Activity: Prettying up the git log!
 * [ ] Activity: Picky picky picky...
