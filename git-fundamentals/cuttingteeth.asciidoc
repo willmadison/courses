@@ -242,7 +242,7 @@ When resetting you can actually reset to any previous commit if you want `HEAD` 
 
 = Activity: To the Mothership
 
-So far we've only talked briefly about the notion of remote repositories and teir use. Let's look at them a bit more deeply.
+So far we've only talked briefly about the notion of remote repositories and their use. Let's look at them a bit more deeply.
 
 `git` includes a `git remote` subcommand which allows us to administer and view all of the remotes associated with our repository.
 
@@ -281,11 +281,12 @@ Enough talking! Let's try them out!
 
 1. Navigate to directory that contains this course's documents (I've been making changes while we've been talking).
 2. Once you're there execute a `git pull origin master` command.
-3. Take a look at the history (__Hint: ``git``'s log may be a good place to start) to see what changed.
+3. Take a look at the history (__Hint: ``git``'s log may be a good place to start__) to see what changed.
 4. Optional: If you really want to do a deep dive of a given commit to see what changed you can leverage the `git show <commit_hash>` command.
 
 Let's take ``fetch``ing for a spin!
 
 1. Navigate to directory that contains this course's documents.
 2. Once you're there execute a `git fetch origin` command.
-3. Note: It may look like nothing happened...that's ok! We'll take a deeper look right after the break! Let's get some food!!!
+
+__Note: It may look like nothing happened...that's ok! We'll take a deeper look right after the break! Let's get some food!!!__
