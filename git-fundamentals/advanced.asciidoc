@@ -111,11 +111,69 @@ upon doing so `git` will open up a text editor to allow me to tell it exactly wh
 
 [source,bash]
 ----
+pick 528217c mor changes
+pick bc55cf9 fixing a typo
+pick 65ca0e2 fixes a typo and adds a couple of tips
+pick 18171dd fixing some grammatical issues
+pick f6c2e0b intermittent commit
+pick d35c97e more activities
+pick 23b1f5d intermittent commit (now that internet is restored)
+pick 22730bc flushing out remaining teeth cutting bits...
+pick 041cd0b flushing out most of the branching material
+pick 2e2d810 adding python variant for exercises
+pick fe01e7a coming around the bend...
 
+# Rebase cf9321f..fe01e7a onto cf9321f (11 commands)
+#
+# Commands:
+# p, pick = use commit <1>
+# r, reword = use commit, but edit the commit message <2>
+# e, edit = use commit, but stop for amending <3>
+# s, squash = use commit, but meld into previous commit <4>
+# f, fixup = like "squash", but discard this commit's log message <5>
+# x, exec = run command (the rest of the line) using shell <6>
+# d, drop = remove commit <7>
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
 ----
+<1> `pick`: means to use that commit "as is".
+<2> `reword`: says use this commit but allow me to change the commit message.
+<3> `edit`: I've never used this but it looks like it does something similar to `reword` allows you to stop and edit the commit before continuing.
+<4> `squash`: A crowd favorite this allows you to use the commit but make it appear as though it happened as a part of the commit above it.
+<5> `fixup`: Just like a `squash` but drop/discard the commit message of the ``squash``'d commit
+<6> `exec`: I've never used this either but it sounds dangerous, I wouldn't mess with it.
+<7> `drop`: completely drop this commit off the face of this branch.
+
+TIP: the `rebase` steps are performed in a top to bottom fashion. As you can see above they are ordered chronologically with the most recent commit (i.e. current `HEAD`) at the bottom.
+
+Now that we've see these options, let's revisit our whoopsie commit to master.
+
+Activity:
+
+- Leverage an interactive `rebase` to completely remove the latest commit to `master`.
+
+WARNING: A `rebase` should never (well mostly never) been done for commits that have already been ``push``ed to a remote (like `origin`). This is because you're now rewriting ``git``s history locally causing it to differ from what's already been accounted for remotely (their histories have divergd in a strange way). Generally the only way I know to get out of this situation is to do a *force push* to remote when you're *really* *REALLY* sure it should be have you have locally. `force push` should be a last resort, only rebase commits that haven't been pushed up yet.
 
 = Actvity: Open (Source) Exploration
+
+Fun time!
+
+GitHub is a great place to get a lot of good practice in working on repositories that you don't own and collaborating with other developers.
+
+Take a look at a few https://github.com/topics/good-first-issue["good first issue"s] on GitHub in the language of your choice and make a contribution using the techniques we've learned today!
+
+Facilitators will be here to help you in anyway!
+
+Happy Hacking!
 
 = Q & A
 
 = Retrospective!
+
+- Retro Trello Board: https://trello.com/invite/b/9itcC667/8441a735b0bce4406ca3b5fb296152d9/git-fundamentals-workshop-retro
