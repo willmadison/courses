@@ -1,5 +1,7 @@
 package fundamentals
 
+import "fmt"
+
 func Speak(name string) string {
-	return ""
+	return fmt.Sprintf("Hello, %s", name)
 }

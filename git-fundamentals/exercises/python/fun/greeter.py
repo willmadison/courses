@@ -1,4 +1,4 @@
 
 def speak(name):
-    return ''
+    return 'Hello, {0}'.format(name)
 
