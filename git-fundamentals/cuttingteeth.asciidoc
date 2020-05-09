@@ -1,5 +1,6 @@
 [#cuttingteeth]
 = Cutting Our Teeth
+:imagesdir: ./images/
 
 > "Let's get it started! Ha!" - The Black Eyed Peas
 
@@ -7,7 +8,7 @@
 
 Before we can do anything productive in our team's code base we'll need to git (pun intended) the code :).
 
-In order to do that the `git` command we'll rely on is `git clone`. 
+In order to do that, the `git` command we'll rely on is `git clone`. 
 
 Cloning a repository brings down the full repository in all its glory down to your local machine with its full history.
 
@@ -24,6 +25,8 @@ In this exercise we're going to clone two repositories/projects down to your mac
 3. Clone the repository (https://github.com/willmadison/courses.git) for this presentation down to your machine. (Tip: This will be great for following along!)
 
 4. To confirm that everything cloned correctly navigate back to the location we started out in Step 1 and ensure you see two folders there one for each of the repositories we just cloned.
+
+image::clone-url-location.png[]
 
 = Activity: What's the 411? 
 
