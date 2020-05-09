@@ -177,3 +177,10 @@ Happy Hacking!
 = Retrospective!
 
 - Retro Trello Board: https://trello.com/invite/b/9itcC667/8441a735b0bce4406ca3b5fb296152d9/git-fundamentals-workshop-retro
+
+= Resources!
+
+- https://git-scm.com/book/en/v2[The Git Book]
+- https://learngitbranching.js.org/?locale=en_US[learngitbranching.js.org] 
+- http://git-school.github.io/visualizing-git/[Visualizing Git]
+- https://try.github.io/[try.github.io]
