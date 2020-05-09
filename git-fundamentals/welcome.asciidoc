@@ -30,25 +30,25 @@ This workshop/presentation is licensed under the https://opensource.org/licenses
 
 *10:00 - 11:00am: Setting the Stage*
 [%interactive]
-* [ ] Introductions
-* [ ] Story Time!
-* [ ] Programming vs. Software Engineering
-* [ ] The case for Source Control
-* [ ] Baskin Robbins: 31 (eh 5) Flavors of Source Control Managmement (SCM)
+* [X] Introductions
+* [X] Story Time!
+* [X] Programming vs. Software Engineering
+* [X] The case for Source Control
+* [X] Baskin Robbins: 31 (eh 5) Flavors of Source Control Managmement (SCM)
 [%interactive]
-** [ ] Centralized vs. Decentralized SCM
-* [ ] History of Git
-* [ ] Activity: Bootstrapping!
+** [X] Centralized vs. Decentralized SCM
+* [X] History of Git
+* [X] Activity: Bootstrapping!
 
 *11:00am - 12:00pm: Cutting our Teeth (Frequently Used Commands)*
 [%interactive]
-* [ ] Activity: Git the Bag (ehh code)!
-* [ ] Activity: Anatomy of a Git Repository
+* [X] Activity: Git the Bag (ehh code)!
+* [X] Activity: Anatomy of a Git Repository
 [%interactive]
-** [ ] The .git folder
-** [ ] The .gitignore file
-** [ ] lightning fast branch primer
-** [ ] local vs. remote
+** [X] The .git folder
+** [X] The .gitignore file
+** [X] lightning fast branch primer
+** [X] local vs. remote
 * [ ] Activity: Maybe change isn't so hard?
 * [ ] Activity: Make it last forever 🎶
 * [ ] Activity: Oh my bad...🤦 (undoing local changes)
