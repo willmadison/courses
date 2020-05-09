@@ -32,7 +32,7 @@ Before we do this let's get a fresh repository to play with.
 6. Create a branch called `testing`. *Execute `git branch testing`*.
 7. *View* all the branches and ensure that it's there.
 
-Once we've done that here's what `git` does for us:
+Once we've done that here's what `git` has done for us:
 
 Here's a visual:
 
@@ -47,7 +47,7 @@ Once we `checkout` the newly created branch our `HEAD` references moves there li
 
 image::new-branch-checkout.png[]
 
-Now we can make changes, commit things that would only be recorded on the `testing` branch. This is an extremely useful capability for teams of software engineers. 
+Now we can make changes and commit things that would only be recorded on the `testing` branch. This is an extremely useful capability for teams of software engineers. 
 
 TIP: Checking out a newly created branch happens so often that there's a convenient short cut which will a) create the new branch and b) check it out all in one go! That shorthand command is `git checkout -b <branch_name>` (I use it almost exclusively).
 
@@ -59,21 +59,29 @@ Branching is *CORE* to all `git` workflows. All meaningful work for most develop
 
 A typical workflow and day in the life of a developer goes like this:
 
-1. Developer Judy is assigned or picks up the next highest priority issue on the teams backlog. Let's imagine that issue is a bug with 1234 as its identifier.
+1. Developer Judy is assigned or picks up the next highest priority issue on the team's backlog. Let's imagine that issue is a bug with 1234 as its identifier.
 2. Developer Judy will `checkout` a new *feature branch* called `bugFix/1234`. (__Note: A *feature branch* is a [.underline]#short lived# branch that will contain all the necessary changes to build a given feature/fix.__)
 3. Developer Judy fixes the bug and commits her changes to branch `bugFix/1234`, and pushes them up to the `origin` repository.
-4. Developer Judy opens a pull request (often abbreviated PR) in her teams source control system (GitHub, GitLab, BitBucket, something like that...) Asking for her changes from the `bugFix/1234` branch into the bleeding edge `develop` branch. Which can be reviewed by someone else on their team for shared context and double checking.
+4. Developer Judy opens a pull request (often abbreviated PR) in her teams source control system (GitHub, GitLab, BitBucket, something like that...) Asking for her changes from the `bugFix/1234` branch into the bleeding edge `develop` branch (or `master` depending on company policy). Which can be reviewed by someone else on the team for shared context and quality control.
 5. Once that PR has been approved, Judy's changes will be incorporated (``merge``d) into the `develop` branch.
 
 Let's squash a bug!
 
 Scenario:
 
-    You've just joined our team and immediately the Product Manager reports a bug that greetings on the web site aren't displaying correctly (Oh no!). Your Tech Lead Will (👀) felt this would be a great first issue for you to take on! For this exercise, please reference this https://github.com/willmadison/courses/issues/1[GitHub Issue].
+    You've just joined our team and immediately the Product Manager
+    reports a bug that greetings on the web site aren't displaying
+    correctly (Oh no!). Your Tech Lead Will (👀), felt this would be a
+    great first issue for you to take on! For this exercise, please 
+    reference this https://github.com/willmadison/courses/issues/1[GitHub Issue].
 
-    The core engine that provides the greating capability can be found in the `exercises` folder of your `my-courses` repository. Your Tech Lead has informed you that there should be failing tests in place already to help you figure out what's going wrong.
+    The core engine that provides the greating capability can be found 
+    in the `exercises` folder of your `my-courses` repository. Your 
+    Tech Lead has informed you that there should be failing tests in 
+    place already to help you figure out what's going wrong.
 
-    Please fix this in a feature branch and push that feature branch up to your remote repository when you're done.
+    Please fix this in a feature branch and push that feature branch
+    up to your remote repository when you're done.
 
 __Note: This exercise can be completed in *Go*, *JavaScript*, *Java/Kotlin*, or *Python*. You only need to solve it in one of these languages not all.__
 
@@ -88,9 +96,9 @@ While you're in the process of doing this there could be many other changes bein
 Let's add an upstream to your local repo for Will's copy of `courses`.
 
 1. Navigate to your `my-courses` repository locally.
-2. Add Will's courses repository as a new `remote` using the following command `git remote add upstream <remote_url>` (Note: the remote url for Will's courses repository is https://github.com/willmadison/courses.git)
-3. To ensure we have all the correct remotes, let's view them all (Hint: `git remote -v`)
-4. Once you've done that let's look at all of the branches we have. Execute a `git branch -a` (This will display `all` (hence the `-a`) of the branches..even the remote ones!)
+2. Add Will's courses repository as a new `remote` using the following command `git remote add upstream <remote_url>` (Note: the remote url for Will's courses repository is https://github.com/willmadison/courses.git).
+3. To ensure we have all the correct remotes, let's view them all (Hint: `git remote -v`).
+4. Once you've done that let's look at all of the branches we have. Execute a `git branch -a` (This will display `all` (hence the `-a`) of the branches..even the remote ones!).
 5. Remember that `git fetch` we did that appeared to not do anything, compare the branches that are reportedly available at the `upstream` remote with the branches in your local copy of Will's `courses` repository.
 
 Awesome! Now we're set to do our first `merge`. Let's get to it!
@@ -105,7 +113,9 @@ In order to merge you'll want to have the branch you want to merge *into* alread
 
 = Activity: I'm feeling conflicted... 🌚 ️
 
-The `merge` we just performed was pretty much a "fast forward" given that master hadn't really had any changes occur to it since that feature was developed these are relatively painless and very common for short lived feature branches (Opinion: all feature branches *should be* short lived.)
+The `merge` we just performed was what `git` calls a "fast forward" given that master hadn't really had any changes occur to it since that feature was developed.
+
+Fast forward merges are relatively painless and very common for short lived feature branches (Opinion: all feature branches *should be* short lived.)
 
 But, there are times where things don't necessarily go so smoothly to demonstrate this let's `pull` in some changes from our `upstream` `hotfixes` branch. 
 
@@ -138,7 +148,7 @@ Today, so that we can have more control, and also because the conflict is so tin
 
 Conflict resolution involves a few steps:
 
-1. Identify all conflicts by looking for the awkward `<<<< HEAD` merge conflict marker.
+1. Identify all conflicts by looking for the awkward `<<<< HEAD` merge conflict marker. (__Note: `git status` can also help show what files are conflicting__)
 2. Decide what should be kept between the conflicted versions (__Note: Sometimes this is a blend of concepts or portions from both versions__).
 3. Delete the merge conflict markers (i.e. the line(s) containing `<<< HEAD` `======` and the trailing `>>>>> branch_name`)
 4. Once you are happy with the changes execute a `git add <conflicted_file_name>` to mark the conflict resolved. (__Note: This lets git know it's cool to merge and commit now__)

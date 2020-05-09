@@ -1,5 +1,6 @@
 [#cuttingteeth]
 = Cutting Our Teeth
+:imagesdir: ./images/
 
 > "Let's get it started! Ha!" - The Black Eyed Peas
 
@@ -7,7 +8,7 @@
 
 Before we can do anything productive in our team's code base we'll need to git (pun intended) the code :).
 
-In order to do that the `git` command we'll rely on is `git clone`. 
+In order to do that, the `git` command we'll rely on is `git clone`. 
 
 Cloning a repository brings down the full repository in all its glory down to your local machine with its full history.
 
@@ -24,6 +25,8 @@ In this exercise we're going to clone two repositories/projects down to your mac
 3. Clone the repository (https://github.com/willmadison/courses.git) for this presentation down to your machine. (Tip: This will be great for following along!)
 
 4. To confirm that everything cloned correctly navigate back to the location we started out in Step 1 and ensure you see two folders there one for each of the repositories we just cloned.
+
+image::clone-url-location.png[]
 
 = Activity: What's the 411? 
 
@@ -140,7 +143,7 @@ Let's `add` this item to ``git``'s tracking mechanism.
 
 To do that, we leverage the `add` command.
 
-``add``ing an item in `git` "stages" that item to be included in the set of changes that gets committed to ``gits``'s
+``add``ing an item in `git` "stages" that item to be included in the set of changes that gets committed to ``git``'s
 log of the historical changes that have taken place.
 
 1. Execute `git add git-fundamentals/scratchpad.md` from your `toc-foundations-notes` repository.
@@ -239,7 +242,7 @@ When resetting you can actually reset to any previous commit if you want `HEAD` 
 
 = Activity: To the Mothership
 
-So far we've only talked briefly about the notion of remote repositories and teir use. Let's look at them a bit more deeply.
+So far we've only talked briefly about the notion of remote repositories and their use. Let's look at them a bit more deeply.
 
 `git` includes a `git remote` subcommand which allows us to administer and view all of the remotes associated with our repository.
 
@@ -278,11 +281,12 @@ Enough talking! Let's try them out!
 
 1. Navigate to directory that contains this course's documents (I've been making changes while we've been talking).
 2. Once you're there execute a `git pull origin master` command.
-3. Take a look at the history (__Hint: ``git``'s log may be a good place to start) to see what changed.
+3. Take a look at the history (__Hint: ``git``'s log may be a good place to start__) to see what changed.
 4. Optional: If you really want to do a deep dive of a given commit to see what changed you can leverage the `git show <commit_hash>` command.
 
 Let's take ``fetch``ing for a spin!
 
 1. Navigate to directory that contains this course's documents.
 2. Once you're there execute a `git fetch origin` command.
-3. Note: It may look like nothing happened...that's ok! We'll take a deeper look right after the break! Let's get some food!!!
+
+__Note: It may look like nothing happened...that's ok! We'll take a deeper look right after the break! Let's get some food!!!__
