@@ -143,7 +143,7 @@ Let's `add` this item to ``git``'s tracking mechanism.
 
 To do that, we leverage the `add` command.
 
-``add``ing an item in `git` "stages" that item to be included in the set of changes that gets committed to ``gits``'s
+``add``ing an item in `git` "stages" that item to be included in the set of changes that gets committed to ``git``'s
 log of the historical changes that have taken place.
 
 1. Execute `git add git-fundamentals/scratchpad.md` from your `toc-foundations-notes` repository.
