@@ -1,5 +1,5 @@
 const speak = (name) => {
-    return ""
+    return "Hello, " + name
 }
 
 module.exports.speak = speak;
