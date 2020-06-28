@@ -1,0 +1,56 @@
+:setids:
+:sectanchors:
+:sectlinks:
+:sectnums:
+:toc:
+:stem:
+
+:numbered!:
+
+== Overview
+
+The goal of this workshop is to expose everyone to practical Software Engineering fundamentals in use by millions of Sotware Professionals all over the world.
+
+=== Schedule
+
+Here's the rough outline for how today will flow...
+
+[cols=2*,options="header"]
+|=== 
+| Start
+| Description
+
+| 9:00  | <<welcome>>
+| 9:10  | Introductions (5 minutes)
+| 9:15  | <<settingthestage>>
+| 10:00	| Break (10 minutes)
+| 10:10	| <<opentoolbox>>
+| 11:10	| Break (15 minutes)
+| 11:25	| <<gettingvisual>>
+| 12:00	| Lunch (60 minutes)
+| 13:00	| <<gettingvisual>>
+| 13:45	| Break (15 minutes)
+| 14:00	| <<behindthecurtain>>
+| 15:00	| Break (5 minutes)
+| 15:05	| <<alltogether>>
+| 16:30	| Free Exploration/Q&A (15 minutes)
+| 16:45	| Retro/Close/Other Resources
+|===
+
+:leveloffset: +1
+
+include::welcome.asciidoc[]
+
+:numbered:
+
+include::settingthestage.asciidoc[]
+
+include::opentoolbox.asciidoc[]
+
+include::gettingvisual.asciidoc[]
+
+include::behindthecurtain.asciidoc[]
+
+include::alltogether.asciidoc[]
+
+:leveloffset: -1
