@@ -1,5 +1,5 @@
 import unittest
-from fun import greeter
+#from fun import greeter
 
 class GreetingTests(unittest.TestCase):
 
