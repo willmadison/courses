@@ -1,0 +1,34 @@
+[#quadlog]
+= Quadratic and Logarithmic Complexity Algorithms
+:imagesdir: ./images/
+
+= Activity: Duplicate Detection
+
+= Our Programmatic Ace in the Hole: Sorting
+
+= Activity: Bubble Sort
+
+= Introduction to Recursion
+
+Recursion in a nutshell is best described as leveraging the realization that a given problem really is just a composition of the same problem over and over all the way down.
+
+When a problem is best suited for a recursive solution there are two primary things we must identify and understand:
+
+1. The Base Case: The case under which we no longer need to recurse deeper and can reasonably return.
+2. The Recursive Case: The case under which we haven't fully answered the question and need to go deeper.
+
+Example elegant recursive problem: Searching for a given file in a nested directory file system.
+
+Assuming we start at the top directory called */start* looking for a file called *needle.txt* which is guaranteed to be present how can we determine which subfolder the file is in?
+
+_What is the base case?_
+
+_What is the recursive case?_
+
+= Activity: Fibonacci Sum Calculator
+
+= Activity: Sublinear Exponentiation
+
+= Activity: Merge Sorting
+
+= Activity: Heap Sorting

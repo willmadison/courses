@@ -1,0 +1,45 @@
+[#foundational]
+= Laying a Firm Foundation
+:imagesdir: ./images/
+
+> "It's peanut butter jelly time" - Buckwheat Boyz
+
+= The Peanut Butter to Algorithms' Jelly: Data Structures
+
+If algorithms are the recipe, then Data Structures are the knifes, cutting boards, board scrapers, whisks etc. that we use to craft delicious solutions. They're our tools.
+
+To create software effectively at any level it requires using BOTH data structures and algorithms in tandem.
+
+== Data Structures Lightning Round
+
+=== What is a data structure?
+
+Generally a data structure is a well understood, standardized container for information that a program can leverage to perform future operations. 
+
+Each data structure has it's own semantics and common performance characteristics for usage:
+
+= Arrays/Lists
+
+= Stacks/Queues
+
+= Maps/Dictionaries
+
+= Trees/Graphs
+
+== The Notorious BIGs
+
+image::biggie.jpg[]
+
+= Big Omega aka "The Best Case"
+
+Big Omega is commonly referred to as the "Best Case" performance.
+
+= Big O aka "The Worst Case"
+
+Big Oh is commonly referred to as the "Worst Case" performance. It is also subsequently the mostly commonly referenced of all the BIGs.
+ 
+= Big Theta aka "The Average Case"
+
+Big Theta is the _fanciest_ of the bunch. It is also commonly referred to as the "Average Case" performance.
+
+= Activity: Baddest Big Oh Touch My Hand

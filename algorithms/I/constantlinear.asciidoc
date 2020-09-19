@@ -1,0 +1,13 @@
+[#constantlinear]
+= Constant and Linear Complexity Algorithms
+:imagesdir: ./images/
+
+= Activity: Even or Odd
+
+= Activity: Find the Max
+
+= Activity: Palindrome Detective
+
+= Activity: Parenthesis Matching
+
+= Activity: FizzBuzz

@@ -1,0 +1,54 @@
+[#settingstage]
+= Setting the Stage
+:imagesdir: ./images/
+
+> "Software is Eating the World" - Marc Andreessen, Venture Capitalist founder of Andressen Horowitz
+
+= Programming vs. Software Engineering
+
+> "Software engineering is what happens to programming when you add time and other programmers." - Russ Cox
+
+== No "I" in Team
+
+Many of us are familiar with the joy and fulfillment of cranking out code, on our own, for class assignments.
+It's truly exhilarating! You feel like you have the the world at your fingertips and can wrangle the problem
+into submission with merely a QWERTY (or DVORAK if you're into that sort of thing) keyboard at your disposal.
+
+This gets completely turned on it's head once you are among the professional developer ranks. When working in
+teams one thing that becomes blatantly obvious is that multiple developers/engineers with different opinions, expeiences,
+and perspectives can often come up with wildly varying approaches to solving a given problem.
+
+Because of this it's key that we have a common means by which to communicate the pros/cons of one approach versus another.
+
+Algorithms and Algorithmic Complexity Analysis to the rescue!
+
+= The Joy of Cooking
+
+image::joc.jpg[]
+
+The Joy of Cooking is one of the best selling and most critically acclaimed Cookbooks of all time.
+
+I'd also like to make the claim that in another sense its also one of the best selling algorithms books of all time.
+
+What is a recipe? 
+
+> noun. a set of instructions for preparing a particular dish, including a list of the ingredients required.
+
+Algorithms are essentially __very, very precise__ recipes.
+
+Algorithms have precisely defined inputs (ingredients) and an a precise, finite set of steps to produce an expected output (finished dish).
+
+The biggest difference is that cooking is often imprecise (i.e. a pinch of salt, a dash of pepper) which is hard to measure. Algorithms, as a neccessity for proving correctness over time have to be much more precise/specific.
+
+In a nutshell, if you can give directions, or teach grandma's peach cobbler recipe (with precision), you're already an algorist.
+
+= Activity: Introduction To Miro (formerly known as RealTimeBoard)
+
+1. Please visit the following url: https://miro.com/app/board/o9J_kldKklM=/.
+2. We'll provide the password for the board in the Zoom chat.
+
+Miro is a digital whiteboard collaboration tool that we'll use to make our virtual classroom more like an in person experience.
+
+It's large enough for us all to have our own space and work in private and will help facilitate share backs in a seamless way.
+
+We'll largely be drawing arrows, graphs, and writing text and some smallish code snippets feel free to use your favorite text editor and paste into the Miro board if that's easier :).

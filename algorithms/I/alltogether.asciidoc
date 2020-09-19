@@ -1,0 +1,43 @@
+[#alltogether]
+= Bringing it All Together
+:imagesdir: ./images/
+
+= Whiteboard Interview Best Practices/Tips
+
+The dirty (or maybe not so dirty) little secret of technical interviewing is that it's largely a very social experiment. Most interviewers are looking to determine whether or not the candidate is: a) Smart b) able to communicate their ideas effective and c) someone they could consider working and thriving with on a team.
+
+To that end there are a few guidelines I often encourage everyone to incorporate into their aresenal as it pertains to technical interviewing:
+
+=== Restating/Clarifying The Question
+
+=== Validating/Invalidating Assumptions
+
+=== Modeling the Problem
+
+=== Vocalizing the Initial Approach
+
+=== Code it Cleanly
+
+=== Iterative Improvement
+
+= Activity: Improving our Max Finder
+
+= Activity: Improving our Palindrome Detector
+
+= Activity: Improving our Duplicate Detector
+
+= Activity: Improving our Fibonacci Calculator
+
+= Activity: Anagram Detector
+
+= Additional Resources
+
+- The Algorithm Design Manual - https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202
+
+- Cracking the Coding Interview - https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_3?crid=2LJUZ67X14DP2&dchild=1&keywords=cracking+the+coding+interview&qid=1600488391&s=books&sprefix=cracking+the+c%2Cstripbooks%2C161&sr=1-3
+
+- Introduction to Algorithms - https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/ref=sr_1_3?dchild=1&keywords=algorithms&qid=1600488548&sr=8-3
+
+- The Art of Computer Programming - https://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043/ref=sr_1_2?crid=312HG9ASKC8M4&dchild=1&keywords=the+art+of+computer+programming&qid=1600488370&s=books&sprefix=the+art+of+comput%2Cstripbooks%2C150&sr=1-2
+
+- CareerCup.com (especially their awesome resume template https://www.careercup.com/resume)

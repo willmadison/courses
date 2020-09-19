@@ -44,6 +44,7 @@ This workshop/presentation is licensed under the https://opensource.org/licenses
 ** [ ] Arrays/Lists
 ** [ ] Stacks/Queues
 ** [ ] Maps/Dictionaries 
+** [ ] Trees/Graphs 
 * [ ] Algorithmic Analysis Recap
 * [ ] The Notorious BIGs
 [options="interactive"]
