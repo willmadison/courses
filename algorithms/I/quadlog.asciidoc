@@ -27,8 +27,8 @@ _What is the recursive case?_
 
 = Activity: Fibonacci Sum Calculator
 
-= Activity: Sublinear Exponentiation
+= Activity: Sublinear Exponentiation (Time permitting)
 
 = Activity: Merge Sorting
 
-= Activity: Heap Sorting
+= Activity: Heap Sorting (Time permitting)
