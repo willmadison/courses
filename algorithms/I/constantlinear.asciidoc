@@ -6,8 +6,8 @@
 
 = Activity: Find the Max
 
-= Activity: Palindrome Detective
-
 = Activity: Parenthesis Matching
+
+= Activity: Palindrome Detective (Time Permitting)
 
 = Activity: FizzBuzz (Time Permitting)
