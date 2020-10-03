@@ -2,6 +2,8 @@
 = Bringing it All Together
 :imagesdir: ./images/
 
+= Mock Interview Role Play
+
 = Whiteboard Interview Best Practices/Tips
 
 The dirty (or maybe not so dirty) little secret of technical interviewing is that it's largely a very social experiment. Most interviewers are looking to determine whether or not the candidate is: a) Smart b) able to communicate their ideas effective and c) someone they could consider working and thriving with on a team.

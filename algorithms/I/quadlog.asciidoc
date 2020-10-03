@@ -8,6 +8,8 @@
 
 = Activity: Bubble Sort
 
+= Activity: Binary Search
+
 = Introduction to Recursion
 
 Recursion in a nutshell is best described as leveraging the realization that a given problem really is just a composition of the same problem over and over all the way down.
