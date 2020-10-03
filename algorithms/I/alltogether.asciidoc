@@ -6,7 +6,9 @@
 
 = Whiteboard Interview Best Practices/Tips
 
-The dirty (or maybe not so dirty) little secret of technical interviewing is that it's largely a very social experiment. Most interviewers are looking to determine whether or not the candidate is: a) Smart b) able to communicate their ideas effective and c) someone they could consider working and thriving with on a team.
+The dirty (or maybe not so dirty) little secret of technical interviewing is that it's largely a very social experiment. Most interviewers are looking to determine whether or not the candidate is: a) Smart b) able to communicate their ideas effectively and c) someone they could consider working and thriving with on a team that would make the team incrementally better.
+
+To add insult to injury in an already stressful situation, giving a good interview is also a skill that can sometimes be lacking and/or isn't really taught or emphasized. As such, as the interviewee you may often be found having to help manage the interaction in the interview.
 
 To that end there are a few guidelines I often encourage everyone to incorporate into their aresenal as it pertains to technical interviewing:
 

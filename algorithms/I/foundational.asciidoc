@@ -6,7 +6,7 @@
 
 = The Peanut Butter to Algorithms' Jelly: Data Structures
 
-If algorithms are the recipe, then Data Structures are the knifes, cutting boards, board scrapers, whisks etc. that we use to craft delicious solutions. They're our tools.
+If algorithms are the recipe, then Data Structures are the knives, cutting boards, board scrapers, whisks etc. that we use to craft delicious solutions. They're our tools.
 
 To create software effectively at any level it requires using BOTH data structures and algorithms in tandem.
 
@@ -14,9 +14,9 @@ To create software effectively at any level it requires using BOTH data structur
 
 === What is a data structure?
 
-Generally a data structure is a well understood, standardized container for information that a program can leverage to perform future operations. 
+Generally a data structure is a well understood, standardized container for information that a program can leverage to do its work. 
 
-Each data structure has it's own semantics and common performance characteristics for usage:
+Each data structure has it's own semantics and common performance characteristics for usage. Here's a quick recap:
 
 = Arrays/Lists
 
