@@ -4,11 +4,11 @@
 
 = Activity: Duplicate Detection
 
+= Activity: Binary Search
+
 = Our Programmatic Ace in the Hole: Sorting
 
 = Activity: Bubble Sort
-
-= Activity: Binary Search
 
 = Introduction to Recursion
 
