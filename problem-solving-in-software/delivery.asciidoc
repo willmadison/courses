@@ -1,0 +1,3 @@
+[#delivery]
+= Delivery
+:imagesdir: ./images/

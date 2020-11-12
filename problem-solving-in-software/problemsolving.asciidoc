@@ -1,0 +1,54 @@
+:setids:
+:sectanchors:
+:sectlinks:
+:sectnums:
+:toc:
+:stem:
+
+:numbered!:
+
+== Overview
+
+The goal of this workshop is to arm everyone here with the tools to be able to lead from within software development teams, be accountable to your teammates and stakeholders and iterate with speed and confidence.
+
+=== Schedule
+
+Here's the rough outline for how today will flow...
+
+[cols=2*,options="header"]
+|=== 
+| Start
+| Description
+
+| 10:00 | <<welcome>>
+| 10:00 | Standup/Introductions (5 minutes)
+| 10:05 | <<levelsetting>>
+| 10:30	| <<iterationplanning>>
+| 10:50	| Break (15 minutes)
+| 11:05	| <<technicaldiscovery>>
+| 12:00	| Lunch (60 minutes)
+| 13:00	| <<delivery>>
+| 13:45	| Break (5 minutes)
+| 13:50	| <<feedback>>
+| 14:30	| Break (5 minutes)
+| 14:35	| Q & A (15 minutes)
+| 14:50	| Retro/Close/Other Resources
+|===
+
+:leveloffset: +1
+
+include::welcome.asciidoc[]
+
+:numbered:
+
+include::levelsetting.asciidoc[]
+
+include::iterationplanning.asciidoc[]
+
+include::technicaldiscovery.asciidoc[]
+
+include::delivery.asciidoc[]
+
+include::feedback.asciidoc[]
+
+:leveloffset: -1

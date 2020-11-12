@@ -1,0 +1,84 @@
+[#welcome]
+= Welcome!
+:imagesdir: ./images/
+
+🗣️ What's up!? 
+
+Our mission, if you choose to accept it, is to arm you with the tools you need to be an effective leader/member of a software development team, to make meaningful change happen for businesses all over the world and to build software with confidence.
+
+WARNING: This workshop is not one offered by Microsoft nor do the opinions expressed herein reflect the opinions of Microsoft. We good?!? 👀
+
+== Instructor
+
+- Will Madison (mailto:will@willmadison.com[])
+
+- My name....the Will-iest 👀
+
+- My Family...the loveliest 😎
+
+image::family.jpg[]
+
+- My Dad Jokes...the punniest 🧐 🎩
+
+- My fraternity...the OWTest 😛 🐶 💜 💛
+
+== License and Materials
+
+This workshop/presentation is licensed under the https://opensource.org/licenses/MIT[MIT license]. As such, feel free to reference it and leverage it with appropriate attribution.
+
+== Today's Schedule
+
+*10:00 - 10:20: Level Setting*
+[options="interactive"]
+* [ ] Standup/Introductions & Expectation Setting
+* [ ] Software: The Human Element
+* [ ] Programming vs. Software Engineering
+* [ ] The Biggest Problems Before Us As Practitioners
+* [ ] Stakeholders
+* [ ] Activity: Stakeholder Mapping (https://miro.com/app/board/o9J_lfXxeaE=/) [problemsolving]
+* [ ] Activity: Goals Exercise (https://miro.com/app/board/o9J_lfXxeaE=/) [problemsolving]
+* [ ] Activity: Introduction to Trello (https://trello.com/b/1aY9Y6PC/problem-solving-in-software)
+
+*10:30 - 11:15a: Iteration Planning Meeting*
+[options="interactive"]
+* [ ] Agile Primer: The Agile Manifesto
+* [ ] Agile Primer: Common "Flavors" of Agile
+** [ ] Technical Leadership in Planning
+** [ ] Common Terminology
+** [ ] The Goal
+** [ ] Kanban
+** [ ] Scrum
+** [ ] Extreme Programming & Balanced Teams
+* [ ] Activity: Backlog Grooming and Story Estimation
+
+*11:15 - 11:30: Break*
+
+*11:30 - 12:00pm: Technical Discovery*
+[options="interactive"]
+* [ ] Ambiguity: The Root of all Software Engineering Evil
+* [ ] Activity: Architectural Diagrams
+* [ ] Technical Excellence: The -ilities
+* [ ] The Zen of Tradeoffs
+* [ ] Activity: Architectural Diagrams
+* [ ] Activity: Technical Spike on Unfamiliar Code Base
+
+*12:00 - 1:00pm: LUNCH!* 😋 🤤 🥡 🍲
+
+*1:00 - 1:45pm: Delivering Software Solutions*
+[options="interactive"]
+* [ ] Activity: Adding a feature
+* [ ] Activity: Fixing a bug
+* [ ] Activity: Tackling Technical Debt
+
+*1:45 - 2:00: Break*
+
+*2:00 - 3:00pm: Feedback*
+[options="interactive"]
+* [ ] The Tighter the Feedback Loop, The Better
+* [ ] The Slippery Slope of Surveys
+* [ ] Activity: Plus/Delta
+* [ ] Activity: Happy, Meh, Sad
+* [ ] Activity: Sailboat Retro
+* [ ] Resources
+* [ ] Q & A
+* [ ] Retrospective!

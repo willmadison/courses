@@ -1,0 +1,53 @@
+[#technicaldiscovery]
+= Technical Discovery
+:imagesdir: ./images/
+
+= Ambiguity: The Root of All Software Engineering Evil
+
+As software engineering practitioners one of our key responsibilities is driving out ambiguity in the software systems that we are developing.
+
+One of the key tools for accomplishing this is leveraging Domain Driven Design and a couple of its key tenants: the Ubiquitous Language & Context Mapping.
+
+== Ubiquitous Language
+
+A ubiquitous language is a shared glossary of sorts that a Product Teams use when talking about their systems. The terms are consistent in conversations about design/markup as well as in the actual code base. This is done so that there is no mental translation that has to happen when discussing software solutions with domain experts becasue everyone is speaking the same language rather than developers trying to "translate" source code syntax into english for Product Managers and Designers.
+
+== Bounded Context(s)
+This is simply a logical boundary where a given ubiquitous language "makes sense".
+
+= Activity: Ubiquitous Language & Context Mapping for a Pizza Restaurant
+
+Let's design and map out a couple of bounded contexts for a basic Pizza Shop Management System.
+
+= Technical Excellence: The -ilities
+
+* Readability
+
+* Maintainability
+
+* Reliability
+
+* Flexibility/Extensibility
+
+* Scalability
+
+= The Zen of Tradeoffs
+
+Unfortunately, there is no perfect science to making the necessary tradeoffs we have to make in software and many of them depend on the constraints and context in which our team is operating.
+
+= Activity: Architectural Diagrams
+
+For this activity, let's diagram our understanding of (potentially) how a site like YouTube would be designed.
+
+= Activity: Technical Spike on an Unfamiliar Code Base
+
+In the courses repository under the `problem-solving-in-software` folder you'll find an application called `todoey` which represents TOC Corp's flagship product.
+
+There are several questions we want to answer in this spike:
+
+1. What is the basic architectural layout of the system. (draw a basic Architectural diagram)
+1a. How do the various components communicate?
+2. What kind of storage does it use? 
+3. What is its tech stack?
+4. How do we build/compile it?
+5. How do we get it running locally?

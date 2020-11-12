@@ -1,0 +1,143 @@
+[#iterationplanning]
+= Iteration Planning Meeting
+:imagesdir: ./images/
+
+= Agile Primer: The Agile Manifesto
+
+> Individuals and interactions over processes and tools
+Working software over comprehensive documentation
+Customer collaboration over contract negotiation
+Responding to change over following a plan
+
+> That is, while there is value in the items on
+> the right, we value the items on the left more.
+
+- https://agilemanifesto.org/
+
+== Be agile, Don't Do "Agile"
+
+A misstep in the industry is that there are a number of teams/organizations that proclaim to "Do Agile" which means they have some of the trademark ceremonies that are attributable to agile software development but they miss the mark on delivering with any sort of agility. 
+
+What it usually looks like is something like: releases are infrequent (if ever), estimates for how long things will take are padded for fear of retibution, requested features large and bulky, and the list goes on, but, hey we do standups!
+
+Sometimes software development teams miss the forest for haggling over the ceremonial trees. With that, let's talk about a few flavors of agile software development.
+
+= Agile Primer: Common "Flavors of Agile"
+
+== Product Team Anatomy
+
+As aforementioned, software development almost always occurs in a team context. Here are some of the usual personas that are part of a Product Team:
+
+* Product Owners
+* Scrum Masters
+* Product Managers
+* Designers
+* Quality Assurance Testers
+* Software Developers/Engineers
+* Cyber Security Experts
+* System Reliability Engineers
+
+In order for ideas to flow from the minds of customers/product owners into software systems we need methodologies for organizing and communicating the work to be done and where things stand.
+
+== Product Anatomy
+
+In order to bring software products to life, there are a number of items that we must determine:
+
+1. Do we have a real problem that can be solved with a software solution? (Is this Useful?)
+2. Is this problem actually worth solving? (Is this Viable?)
+3. Building/organizing a team to deliver a software solution to solve this problem (Is this Functional and Feasible?)
+4. Does this solution actually solve the problem for our user and do they enjoy using it? (Is this Useful and Joyful?)
+
+In order to have sustainable success as a product team our product(s), generally, have to check these boxes.
+
+As you can see, only *one* of these steps involves the actual writing of source code, everything else hinges on:
+
+* Collaboration
+* Communication
+* Fast Feedback
+
+Which is the reasons why teams opt for various agile methodologies to achieve these outcomes.
+
+== Technical Leadership in Planning
+
+There is a fair amount of planning that goes into the production of software systems. As technical leaders, we are responsible for collaboring with our Product Managers and Designers
+
+== Common Terminology
+
+* Backlog
+* Story/Feature
+* Story Point
+* Sprint/Iteration
+* Burndown
+* Velocity
+
+== The Goal
+
+Delivering working software to users, rapidly, reliably, and predicatably.
+
+== Kanban
+
+Kanban (of Japanese origin) literally translates to "sign board". It is a means by which a team can visualize Work in Progress (or WIP).
+
+It's entire basis is on transparency and simplicity.
+
+The typical swimlanes of a Kanban board are:
+
+* To Do
+* Doing/In Progress
+* Done
+
+These three columns/swimlanes represent the simpliest approach to Kanban.
+
+What we're generally looking for is a stead flow of items that originate in "To Do" and end up in Done. If at any point we notice a logjam of things lingering in the Doing/In Progress column there's usually a bit of detective work to understand what's holding things up process wise or otherwise so that we can improve as a team.
+
+== Scrum
+
+> Scrum is a framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.
+
+> Scrum itself is a simple framework for effective team collaboration on complex products
+
+- https://www.scrum.org/resources/what-is-scrum
+
+=== Roles on a Scrum Team
+
+==== Product Owner
+
+The Product Owner is soley responsible for the sanctity of the backlog. The Product Owner ensures the the backlog is properly prioritized and optimized for the development team's execution.
+
+More information available here: https://www.scrum.org/resources/what-is-a-product-owner
+
+==== Scrum Master
+
+As the name implies the Scrum Master is responsible for overseeing and advocating for the Srum process by helping the team understand the theory, practices, rules and values of the framework.
+
+More information available here: https://www.scrum.org/resources/what-is-a-scrum-master
+
+==== Development Team
+
+Again as the name implies the Development Team is responsible for delivering functionality at the end of each "Sprint".
+
+More information available here: https://www.scrum.org/resources/what-is-a-scrum-development-team
+
+=== Key Characteristics of Scrum
+
+* Work is broken down into the form of incremental phases of delivery called Sprints.
+* Sprints can range in duration and are completely up to the team to decide. (2 weeks is very common)
+* Generally Sprints operate on a commitment based plan (i.e. the team agrees to accomplish X amount of work during the Sprint)
+* Sprints often end with a retrospective and demo to key stakeholders of what was accomplished.
+
+== Extreme Programming (XP) & Balanced Teams
+
+Janice Fraser has an excellent talk about Balanced Teams: (https://www.youtube.com/watch?v=Z_Q4Q8rCVpU)
+
+=== Key Characteristics of XP & Balanced Teams
+
+* XP's Biggest Advantage is it's flexibility and agility as it pertains to adapting to change.
+* XP teams are empowered to do what's best for the product and as such, much of the decision making is pushed down to the team as they are guided by a clear business directive.
+* XP teams work generally in short iterations (often as short as 1 week) releasing frequently (i.e. weekly and often multilple times per week)
+* XP teams have dedicated Product Managers, UX Designers, and Engineers dedicated and focused solely on the product.
+* XP teams leverage emergent planning rather than commitment based planning allowing them to be highly adaptable to change. 
+
+More information available here: http://www.extremeprogramming.org/
+
+= Activity: Backlog Grooming & Effort Estimation

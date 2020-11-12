@@ -1,0 +1,101 @@
+[#levelsetting]
+= Level Setting
+:imagesdir: ./images/
+
+= Standup & Expectation Setting
+
+Regardless of what "flavor" or methodology for Software Development a team is leveraging they usually they _usually_ host a daily "Standup Meeting".
+
+Standups generally serve to keep the entire team abreast of matters that are relevant to the entire team and to help raise awareness. Standups are NOT and I repeat NOT Status Reports.
+
+== Standup Do's and Don'ts
+
+=== Do's
+
+* Actually standup! (if you're able)
+* Be kind
+* Be punctual
+* Recap any open action items that the team has pending
+* Keep the Meeting Sharp (taking conversations offline if need be)
+* Ask questions if something isn't clear
+* (Optional) Clap at the end [it's a nice little cherry on top]
+
+=== Dont's
+
+* Please don't sit down it's a standup! (Standing up prevents runoff conversations)
+* Please don't get too into the weeds on every detail of your work like a status report.
+* Please don't be rude.
+
+== Standup Do's and Don'ts
+
+The most common variant of standup, in my experience, follow the following format:
+
+* What I worked on yesterday.
+* What I'm planning to do today.
+* What if any blockers I have in the way of getting things done.
+
+Feel free to modify this to your team's needs remember: often less is more.
+
+= Software: The Human Element
+
+For as much as Software Development gets framed as a loner activity, it is really one of the most social endeavors we embark upon as a community.
+
+Most, if not all, software systems serve at the pleasure of other humans, making them more productive, helping them to navigate through life, make better business decisions, you name it! 
+
+Software revolves around people.
+
+= Programming vs. Software Engineering
+
+> "Software engineering is what happens to programming when you add time and other programmers." - Russ Cox
+
+== No "I" in Team
+
+Many of us are familiar with the joy and fulfillment of cranking out code, on our own, for class assignments.
+It's truly exhilarating! You feel like you have the the world at your fingertips and can wrangle the problem
+into submission with merely a QWERTY (or DVORAK if you're into that sort of thing) keyboard at your disposal.
+
+This gets completely turned on it's head once you are among the professional developer ranks. When working in
+teams one thing that becomes blatantly obvious is that multiple developers/engineers with different opinions, expeiences,
+and perspectives can often come up with wildly varying approaches to solving a given problem. Couple that with the pressure of needing to make certain deadlines due to market pressures on a business and having different levels of understanding about how much effort or complexity is involved with Product Managers and Designers and you end up in a glass case of emotion!
+
+Because of this fact, it's key that we have strong set of tools, techniques, and methodologies for communicating among our teammates, setting expectations, gaining consensus and clarity, and being as transparent as possible.
+
+== Clarity is King
+
+image::agreement.png[]
+ 
+_https://www.jpattonassociates.com/read-this-first/glad-we-all-agree-2/_
+
+
+== Typical Daily Schedule/Cadence
+
+* Standup
+* Iteration Planning Meeting (usually once a week or every other week)
+* Development Team Huddle and Discussion
+* Build Build Build!
+* Lunch
+* Build Build Build!
+* Home Time!
+
+Note: There are many times where during the "Build Build Build" phases it is necessary to have other meetings away from the keyboard so that time at the keyboard is more well spent.
+
+== The Biggest Problem We Face as Technologists
+
+* Resolving People Problems
+
+== Our Context for Today
+
+We are all staff members at TOC Corp. Our flagship product is a TODO Application that has a 30% market share right behind Todoist. We employ Product Managers, UX Designers, and Full Stack Software Engineers on our team.
+
+Today will be a day in the life of a product team inside of TOC Corp.
+
+== Stakeholders
+
+Stakeholders are the individuals/teams that have a vested interest in what the team who owns a given product is doing. They often help set the budgets, help clarify overarching business implications of the team's work, and are keenly interested in when features/functionality is coming.
+
+Because stakeholders are so key it's important to understand Who they are and what skin they have in the product team's game.
+
+== Activity: Stakeholder Mapping
+
+
+
