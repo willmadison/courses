@@ -78,6 +78,7 @@ This workshop/presentation is licensed under the https://opensource.org/licenses
 * [ ] The Tighter the Feedback Loop, The Better
 * [ ] The Slippery Slope of Surveys
 * [ ] Activity: Plus/Delta
+* [ ] Activity: Roman Vote Pulse Check
 * [ ] Activity: Happy, Meh, Sad
 * [ ] Activity: Sailboat Retro
 * [ ] Resources
