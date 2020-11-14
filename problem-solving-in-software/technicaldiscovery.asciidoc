@@ -25,6 +25,8 @@ Let's design and map out a couple of bounded contexts for a basic Pizza Shop Man
 
 * Maintainability
 
+* Understand-ability
+
 * Reliability
 
 * Flexibility/Extensibility
