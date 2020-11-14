@@ -35,6 +35,14 @@ Let's design and map out a couple of bounded contexts for a basic Pizza Shop Man
 
 Unfortunately, there is no perfect science to making the necessary tradeoffs we have to make in software and many of them depend on the constraints and context in which our team is operating.
 
+However, there is one very good framework that serves Engineering professionals well that is the tradeoffs between:
+
+* Time,
+
+* Quality, and
+
+* Cost
+
 = Activity: Architectural Diagrams
 
 For this activity, let's diagram our understanding of (potentially) how a site like YouTube would be designed.

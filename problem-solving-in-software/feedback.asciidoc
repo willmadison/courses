@@ -1,3 +1,38 @@
 [#feedback]
 = Feedback
 :imagesdir: ./images/
+
+= Feedback is Everything!
+
+At the center of everything we're doing as software practitioners is the sanctity and Psychological Safety of the team. If we cannot be vulnerable and honest with one another, we will never be able to do our best work.
+
+In order to continually get better at what we do it's important that we make a regular habit of seeking and proactively providing feedback on a regular basis.
+
+There are a number of techniques we can use for different circumstances.
+
+[TIP]
+The Tighter The Feedback Loop, The Better!
+
+[WARNING] 
+Retros are only useful if the team takes meaningful action on any items that come out of it!
+
+[TIP] 
+Assign each action an owner and ensure the outstanding action items are visible, potentially even follow up on them in standups/huddles.
+
+= Activity: Roman Vote Pulse Check
+
+= Activity: Plus/Delta
+
+= Actvity: Happy, Meh, Sad
+
+= Additional Resources
+
+- Teaming (Amy Edmondson) - https://www.amazon.com/Teaming-Organizations-Innovate-Compete-Knowledge-ebook/dp/B007MF3BRA
+
+- The Phoenix Project (Gene Kim) - https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290/ref=sr_1_2?dchild=1&gclid=Cj0KCQiA-rj9BRCAARIsANB_4ABjiOzhMIFqTxSiuIRGPz76U5E7XcqiJeiRH1cqvloTfUw0ymNcnHoaAtK2EALw_wcB&hvadid=409958194459&hvdev=c&hvlocphy=9010770&hvnetw=g&hvqmt=e&hvrand=8737562379404674518&hvtargid=kwd-826183750&hydadcr=24656_11410729&keywords=the+phoenix+project&qid=1605330950&sr=8-2&tag=googhydr-20
+
+- Domain Driven Design Distilled (Vaughn Vernon)  - https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420/ref=sr_1_1?dchild=1&keywords=Domain+Driven+Design+Distilled&qid=1605330977&sr=8-1
+
+- Extreme Programming Explained (Kent Beck) - https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658/ref=sr_1_3?dchild=1&keywords=extreme+programming+explained&qid=1605331014&sr=8-3
+
+- Software Engineering at Google (Titus Winters) - https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791

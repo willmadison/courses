@@ -57,7 +57,7 @@ This workshop/presentation is licensed under the https://opensource.org/licenses
 *11:30 - 12:00pm: Technical Discovery*
 [options="interactive"]
 * [ ] Ambiguity: The Root of all Software Engineering Evil
-* [ ] Activity: Architectural Diagrams
+* [ ] Activity: Context Mapping & Ubiquitous Language
 * [ ] Technical Excellence: The -ilities
 * [ ] The Zen of Tradeoffs
 * [ ] Activity: Architectural Diagrams
@@ -77,10 +77,9 @@ This workshop/presentation is licensed under the https://opensource.org/licenses
 [options="interactive"]
 * [ ] The Tighter the Feedback Loop, The Better
 * [ ] The Slippery Slope of Surveys
-* [ ] Activity: Plus/Delta
 * [ ] Activity: Roman Vote Pulse Check
+* [ ] Activity: Plus/Delta
 * [ ] Activity: Happy, Meh, Sad
-* [ ] Activity: Sailboat Retro
+* [ ] Activity: Sailboat Retro (Time Permitting)
 * [ ] Resources
 * [ ] Q & A
-* [ ] Retrospective!
