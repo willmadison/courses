@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	id("org.springframework.boot") version "2.4.0"
 	id("io.spring.dependency-management") version "1.0.10.RELEASE"
+	id("com.moowork.node") version "1.3.1"
 	kotlin("jvm") version "1.4.10"
 	kotlin("plugin.spring") version "1.4.10"
 }
@@ -33,3 +34,26 @@ tasks.withType<KotlinCompile> {
 		jvmTarget = "1.8"
 	}
 }
+
+tasks {
+	register<com.moowork.gradle.node.yarn.YarnTask>("yarnInstall") {
+		description = "Installs front-end dependencies from package.json"
+		setWorkingDir("${project.projectDir}/src/main/webapp")
+		args = mutableListOf("install")
+	}
+
+	register<com.moowork.gradle.node.yarn.YarnTask>("yarnBuild") {
+		dependsOn("yarnInstall")
+		description = "Builds the production-ready version of the web front end"
+		setWorkingDir("${project.projectDir}/src/main/webapp")
+		args = mutableListOf("build")
+	 }
+
+	register<Copy>("copyWebApplication") {
+		dependsOn("yarnBuild")
+		from("${project.projectDir}/src/main/webapp/build")
+		into("build/resources/main/static/.")
+	}
+}
+
+tasks["assemble"].dependsOn("copyWebApplication")

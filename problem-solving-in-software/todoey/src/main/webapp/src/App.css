@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding: 5em;
+}
+
+.TodoSearch {
+  height: 10vh;
+}
+
+.TodoForm {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20vh;
+}
+
+.TodoList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 30vh;
+  overflow-y: auto;
+}
+
+.Todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  border: black solid 1px;
+  border-radius: 10px;
+  width: 25vw;
+  padding: 2em;
+  margin-bottom: 8px;
+}
+
+#contents {
+  font-style: italic;
+}
