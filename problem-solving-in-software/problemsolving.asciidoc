@@ -32,7 +32,7 @@ Here's the rough outline for how today will flow...
 | 13:50	| <<feedback>>
 | 14:30	| Break (5 minutes)
 | 14:35	| Q & A (15 minutes)
-| 14:50	| Retro/Close/Other Resources
+| 14:50	| Close/Other Resources
 |===
 
 :leveloffset: +1
