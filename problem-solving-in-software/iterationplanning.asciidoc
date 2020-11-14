@@ -144,6 +144,31 @@ More information available here: https://www.scrum.org/resources/what-is-a-scrum
 
 Janice Fraser has an excellent talk about Balanced Teams: (https://www.youtube.com/watch?v=Z_Q4Q8rCVpU)
 
+=== Tenants/Core Values of Extreme Programming
+
+* Communication
+* Simplicity
+* Feedback
+* Courage
+* Respect
+* Others (Community)
+
+- Extreme Programming Explained 2nd ed, Beck (2004)
+
+=== Common Practices of Extreme Programming
+
+* Sitting Together
+* Whole Team Presence
+* Informative Workspace
+* Energized Work (Sustainable Pace)
+* Pair Programming
+* Ten-Minute (or less) Builds
+* Continuous Integration
+* Test Driven/Test First Development
+* Incremental Design
+
+- Extreme Programming Explained 2nd ed, Beck (2004)
+
 === Key Characteristics of XP & Balanced Teams
 
 * XP's Biggest Advantage is it's flexibility and agility as it pertains to adapting to change.
