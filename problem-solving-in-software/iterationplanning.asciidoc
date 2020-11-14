@@ -71,6 +71,20 @@ There is a fair amount of planning that goes into the production of software sys
 * Burndown
 * Velocity
 
+== Common Tools
+
+* Asana
+* Atlassian Jira
+* Pivotal Tracker
+* Rally
+* Trello
+* Whiteboards & Sticky Notes
+* Monday
+* Excel/Google Sheets
+
+[WARNING] 
+While all these tools are great, if at any point your tooling cannot readily help the team understand what's the next most important item to work on and where things stand re-evaluate your tools!
+
 == The Goal
 
 Delivering working software to users, rapidly, reliably, and predicatably.
